@@ -18,7 +18,7 @@ export default function Sidebar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      className="fixed top-0 left-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0"
       aria-label="Sidebar"
     >
       <div className="h-full overflow-y-auto bg-black flex justify-center items-center">
