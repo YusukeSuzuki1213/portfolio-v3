@@ -1,14 +1,15 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ScrollId } from "./constants/scrollId";
 
 export default function Home() {
   return (
     <main>
-      <div className="h-screen flex justify-center items-center space-x-16">
+      <div
+        id={ScrollId.HOME}
+        className="h-screen flex justify-center items-center space-x-16"
+      >
         <div className="w-64 h-64 rounded-full overflow-hidden bg-white">
           <Image src="" alt="アバターアイコン" width={500} height={500} />
         </div>
@@ -33,8 +34,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-screen">
-        <h1>HEllO</h1>
+      <div id={ScrollId.RESUME} className="h-screen">
+        <h1>Resume</h1>
+      </div>
+      <div id={ScrollId.POSTS_AND_TALKS} className="h-screen">
+        <h1>Posts-and-talks</h1>
+      </div>
+      <div id={ScrollId.CONTACT} className="h-screen">
+        <h1>Posts-and-talks</h1>
       </div>
     </main>
   );
