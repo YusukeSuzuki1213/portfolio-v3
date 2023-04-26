@@ -13,7 +13,7 @@ export default function RootLayout({
       <head />
       <HeadlineContextProvider>
         <body>
-          <header className="sticky top-0">
+          <header>
             <Navbar />
           </header>
           <Sidebar />

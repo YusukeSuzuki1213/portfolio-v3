@@ -22,29 +22,32 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black bg-opacity-70 sm:hidden">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between p-6">
-        <button
-          className="ml-auto"
-          type="button"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-          onClick={() => setIsMenuOpened(!isMenuOpened)}
-        >
-          <FontAwesomeIcon
-            className="w-6"
-            icon={isMenuOpened ? faXmark : faBars}
-          />
-        </button>
-
+    <nav className="relative sm:hidden">
+      <div className="w-full fixed flex flex-wrap items-center justify-between">
+        <div className="w-full bg-black flex justify-between flex-row-reverse h-16">
+          <button
+            className="p-2 m-4 flex items-center justify-center"
+            type="button"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            onClick={() => setIsMenuOpened(!isMenuOpened)}
+          >
+            <FontAwesomeIcon
+              className="w-5 h-5"
+              icon={isMenuOpened ? faXmark : faBars}
+            />
+          </button>
+        </div>
         <div
-          className={`${!isMenuOpened && "hidden"} w-full`}
+          className={`${
+            !isMenuOpened && "hidden"
+          } w-full px-6 pb-4 bg-black bg-opacity-80`}
           id="navbar-default"
         >
-          <ul className="flex flex-col mt-6 space-y-4">
+          <ul className="flex flex-col">
             {state.headlines.map((headline, _) => {
               return (
-                <li key={headline.id}>
+                <li key={headline.id} className="p-2">
                   <Link
                     className={getTextColor(state.selectedId, headline.id)}
                     onClick={() => linkClicked(headline.id)}
