@@ -2,6 +2,7 @@ import { ScrollId } from "./constants/scrollId";
 import Home from "./components/Home";
 import Resume from "./components/Resume";
 import Blog from "./components/Blog";
+import Presentation from "./components/Presentation";
 
 export default function Page() {
   return (
@@ -20,6 +21,9 @@ export default function Page() {
       </div>
       <div id={ScrollId.BLOG} className="min-h-screen pt-24 lg:mx-28">
         <Blog />
+      </div>
+      <div id={ScrollId.PRESENTATION} className="min-h-screen pt-24 lg:mx-28">
+        <Presentation />
       </div>
     </main>
   );

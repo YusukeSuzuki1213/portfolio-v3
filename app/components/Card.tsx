@@ -10,7 +10,7 @@ type Props = {
 export default function Card(props: Props) {
   return (
     <div className="max-w-xs border rounded-lg shadow bg-gray-800 border-gray-700 transform transition duration-500 hover:scale-105">
-      <a href={props.url}>
+      <a href={props.url} target="_blank">
         <Image
           width={800}
           height={800}
