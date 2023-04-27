@@ -2,7 +2,8 @@
 export const ScrollId = {
   HOME: "home",
   RESUME: "resume",
-  POSTS_AND_TALKS: "posts-and-talks",
+  BLOG: "blog",
+  PRESENTATION: "presentation",
   CONTACT: "contact",
 } as const;
 

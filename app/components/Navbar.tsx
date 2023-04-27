@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative sm:hidden z-50">
+    <nav className="relative lg:hidden z-50">
       <div className="w-full fixed flex flex-wrap items-center justify-between">
         <div className="w-full bg-black flex justify-between flex-row-reverse h-16">
           <button
@@ -49,7 +49,10 @@ export default function Navbar() {
               return (
                 <li key={headline.id} className="p-2">
                   <Link
-                    className={getTextColor(state.selectedId, headline.id)}
+                    className={`${getTextColor(
+                      state.selectedId,
+                      headline.id
+                    )} hover:cursor-pointer`}
                     onClick={() => linkClicked(headline.id)}
                     to={headline.scrollId}
                     smooth={true}

@@ -17,7 +17,7 @@ export default function RootLayout({
             <Navbar />
           </header>
           <Sidebar />
-          <div className="sm:ml-72 bg-gray-950">{children}</div>
+          <div className="lg:ml-64 bg-gray-950">{children}</div>
           <footer></footer>
         </body>
       </HeadlineContextProvider>

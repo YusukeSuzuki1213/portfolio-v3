@@ -28,11 +28,16 @@ const initialState: State = {
     },
     {
       id: 3,
-      displayText: "Posts and Talks",
-      scrollId: ScrollId.POSTS_AND_TALKS,
+      displayText: "Blog",
+      scrollId: ScrollId.BLOG,
     },
     {
       id: 4,
+      displayText: "Presentation",
+      scrollId: ScrollId.PRESENTATION,
+    },
+    {
+      id: 5,
       displayText: "Contact",
       scrollId: ScrollId.CONTACT,
     },
