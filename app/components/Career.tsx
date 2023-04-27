@@ -7,7 +7,7 @@ export default function Career() {
     <ol className="relative border-l border-gray-700">
       {careers.map((career) => {
         return (
-          <li key="title" className="mb-14 ml-10">
+          <li key={career.title} className="mb-14 ml-10">
             <span className="absolute flex items-center justify-center w-10 h-10 bg-green-500 rounded-full -left-5 ring-8 ring-gray-800">
               <FontAwesomeIcon
                 className="w-5 h-5"
