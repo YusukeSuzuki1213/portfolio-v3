@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
       <div className="w-56 h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden bg-white">
         <Image src="" alt="アバターアイコン" width={500} height={500} />
       </div>
