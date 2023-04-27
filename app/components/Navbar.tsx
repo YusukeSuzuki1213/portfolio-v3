@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative sm:hidden">
+    <nav className="relative sm:hidden z-50">
       <div className="w-full fixed flex flex-wrap items-center justify-between">
         <div className="w-full bg-black flex justify-between flex-row-reverse h-16">
           <button
