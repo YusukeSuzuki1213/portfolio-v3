@@ -6,7 +6,7 @@ export default function Presentation() {
   return (
     <div>
       <div className="mb-16">
-        <Heading text="Presentation" />
+        <Heading id="techTalk" text="Tech Talk" />
       </div>
       <div className="flex flex-wrap">
         {presentations.map((presentation) => {

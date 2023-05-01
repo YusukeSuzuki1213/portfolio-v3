@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <div>
       <div className="mb-16">
-        <Heading text="Blog" />
+        <Heading id="blog" text="Blog" />
       </div>
       <div className="flex flex-wrap">
         {blogs.map((blog) => {

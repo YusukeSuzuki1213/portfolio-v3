@@ -4,16 +4,10 @@ import { HeadlineContext } from "../context/headline.context";
 import { Link } from "react-scroll";
 
 export default function Sidebar() {
-  const { state, dispatch } = useContext(HeadlineContext);
+  const { state } = useContext(HeadlineContext);
 
-  const getTextColor = (selectedId: number, currentId: number): string => {
+  const getTextColor = (selectedId: string, currentId: string): string => {
     return selectedId == currentId ? "text-green-500" : "text-white";
-  };
-  const linkClicked = (id: number) => {
-    dispatch({
-      type: "HEADLINE_CLICKED",
-      payload: { id: id },
-    });
   };
 
   return (
@@ -31,8 +25,8 @@ export default function Sidebar() {
                     state.selectedId,
                     headline.id
                   )}`}
-                  onClick={() => linkClicked(headline.id)}
-                  to={headline.scrollId}
+                  to={headline.id}
+                  offset={-160}
                   smooth={true}
                 >
                   <span className="text-base">{headline.displayText}</span>

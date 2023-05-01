@@ -1,60 +1,57 @@
 "use client";
 
 import React, { Dispatch, createContext, useReducer } from "react";
-import { ScrollId, ScrollIdType } from "../constants/scrollId";
 
 type State = {
   headlines: Headline[];
-  selectedId: number;
+  selectedId: Id;
 };
+
+export type Id = "home" | "resume" | "blog" | "techTalk" | "contact";
 
 type Headline = {
-  readonly id: number;
+  readonly id: Id;
   readonly displayText: string;
-  readonly scrollId: ScrollIdType;
 };
 
+export const headlines: Headline[] = [
+  {
+    id: "home",
+    displayText: "Home",
+  },
+  {
+    id: "resume",
+    displayText: "Resume",
+  },
+  {
+    id: "blog",
+    displayText: "Blog",
+  },
+  {
+    id: "techTalk",
+    displayText: "Tech Talk",
+  },
+  {
+    id: "contact",
+    displayText: "Contact",
+  },
+];
+
 const initialState: State = {
-  headlines: [
-    {
-      id: 1,
-      displayText: "Home",
-      scrollId: ScrollId.HOME,
-    },
-    {
-      id: 2,
-      displayText: "Resume",
-      scrollId: ScrollId.RESUME,
-    },
-    {
-      id: 3,
-      displayText: "Blog",
-      scrollId: ScrollId.BLOG,
-    },
-    {
-      id: 4,
-      displayText: "Presentation",
-      scrollId: ScrollId.PRESENTATION,
-    },
-    {
-      id: 5,
-      displayText: "Contact",
-      scrollId: ScrollId.CONTACT,
-    },
-  ],
-  selectedId: 1,
+  headlines: headlines,
+  selectedId: "home",
 };
 
 type Action = {
-  type: "HEADLINE_CLICKED";
+  type: "BISIBLED";
   payload: {
-    id: number;
+    id: Id;
   };
 };
 
 const reducer = (state: State, action: Action) => {
   switch (action.type) {
-    case "HEADLINE_CLICKED":
+    case "BISIBLED":
       return {
         ...state,
         selectedId: action.payload.id,

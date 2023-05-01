@@ -8,17 +8,10 @@ import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
-  const { state, dispatch } = useContext(HeadlineContext);
+  const { state } = useContext(HeadlineContext);
 
-  const getTextColor = (selectedId: number, currentId: number): string => {
+  const getTextColor = (selectedId: string, currentId: string): string => {
     return selectedId == currentId ? "text-green-500" : "text-white";
-  };
-  const linkClicked = (id: number) => {
-    setIsMenuOpened(false);
-    dispatch({
-      type: "HEADLINE_CLICKED",
-      payload: { id: id },
-    });
   };
 
   return (
@@ -53,10 +46,11 @@ export default function Navbar() {
                       state.selectedId,
                       headline.id
                     )} hover:cursor-pointer`}
-                    onClick={() => linkClicked(headline.id)}
-                    to={headline.scrollId}
+                    to={headline.id}
+                    offset={-160}
                     smooth={true}
                     aria-current="page"
+                    onClick={() => setIsMenuOpened(false)}
                   >
                     {headline.displayText}
                   </Link>

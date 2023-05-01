@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div>
       <div className="mb-16">
-        <Heading text="Contact" />
+        <Heading id="contact" text="Contact" />
       </div>
     </div>
   );
