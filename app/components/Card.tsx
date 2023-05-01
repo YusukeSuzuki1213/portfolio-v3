@@ -3,6 +3,7 @@ import Image from "next/image";
 type Props = {
   title: string;
   subtitle: string;
+  date: string;
   url: string;
   imageUrl: string;
 };
@@ -19,10 +20,13 @@ export default function Card(props: Props) {
           alt=""
         />
         <div className="p-5">
-          <h4 className="mb-2 text-2xl font-bold tracking-tight text-white">
+          <h4 className="mb-2 text-xl font-bold tracking-tight text-white line-clamp-2">
             {props.title}
           </h4>
-          <p className="mb-3 font-normal text-gray-400">{props.subtitle}</p>
+          <p className="mb-3 font-normal text-gray-400 italic">{props.date}</p>
+          <p className="mb-3 font-normal text-gray-400 line-clamp-3">
+            {props.subtitle}
+          </p>
         </div>
       </a>
     </div>

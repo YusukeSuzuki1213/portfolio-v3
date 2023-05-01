@@ -18,6 +18,7 @@ export default function Blog() {
               <Card
                 title={blog.title}
                 subtitle={blog.subtitle}
+                date={blog.date}
                 url={blog.url}
                 imageUrl={blog.imageUrl}
               />

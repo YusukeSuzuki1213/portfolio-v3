@@ -18,6 +18,7 @@ export default function Presentation() {
               <Card
                 title={presentation.title}
                 subtitle={presentation.subtitle}
+                date={presentation.date}
                 url={presentation.url}
                 imageUrl={presentation.imageUrl}
               />
