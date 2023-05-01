@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { careers, toAwesomeIcon } from "../constants/career";
+import { careers, toAwesomeIcon } from "@/app/constants/career";
 
 export default function Career() {
   return (

@@ -1,5 +1,5 @@
-import { Id } from "../context/headline.context";
-import { IntersectionObserver } from "./IntersectionObserver";
+import { Id } from "@/app/context/headline.context";
+import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 type Props = {
   id: Id;

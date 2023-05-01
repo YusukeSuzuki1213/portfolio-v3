@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import { HeadlineContext } from "../context/headline.context";
+import { HeadlineContext } from "@/app/context/headline.context";
 import { Link } from "react-scroll";
 
 export default function Sidebar() {

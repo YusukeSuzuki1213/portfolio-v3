@@ -1,4 +1,4 @@
-import Heading from "./Heading";
+import Heading from "@/app/components/Heading";
 
 export default function Contact() {
   return (

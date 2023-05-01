@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import { HeadlineContext, Id } from "../context/headline.context";
+import { HeadlineContext, Id } from "@/app/context/headline.context";
 import { InView } from "react-intersection-observer";
 
 type Props = {

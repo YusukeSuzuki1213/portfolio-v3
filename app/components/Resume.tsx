@@ -1,7 +1,7 @@
-import Career from "./Career";
-import SubHeading from "./SubHeading";
-import Skills from "./Skills";
-import Heading from "./Heading";
+import Career from "@/app/components/Career";
+import SubHeading from "@/app/components/SubHeading";
+import Skills from "@/app/components/Skills";
+import Heading from "@/app/components/Heading";
 
 export default function Resume() {
   return (

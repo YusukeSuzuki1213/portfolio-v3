@@ -1,6 +1,6 @@
-import { blogs } from "../constants/blog";
-import Card from "./Card";
-import Heading from "./Heading";
+import { blogs } from "@/app/constants/blog";
+import Card from "@/app/components/Card";
+import Heading from "@/app/components/Heading";
 
 export default function Blog() {
   return (

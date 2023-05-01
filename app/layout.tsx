@@ -1,7 +1,7 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import { HeadlineContextProvider } from "./context/headline.context";
+import Navbar from "@/app/components/Navbar";
+import Sidebar from "@/app/components/Sidebar";
+import { HeadlineContextProvider } from "@/app/context/headline.context";
 
 export default function RootLayout({
   children,

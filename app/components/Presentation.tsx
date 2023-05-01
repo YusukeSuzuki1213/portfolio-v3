@@ -1,6 +1,6 @@
-import { presentations } from "../constants/presentation";
-import Card from "./Card";
-import Heading from "./Heading";
+import { presentations } from "@/app/constants/presentation";
+import Card from "@/app/components/Card";
+import Heading from "@/app/components/Heading";
 
 export default function Presentation() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { HeadlineContext } from "../context/headline.context";
+import { HeadlineContext } from "@/app/context/headline.context";
 import { useState, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";

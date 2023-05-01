@@ -1,4 +1,4 @@
-import { classFromRate, skills } from "../constants/skill";
+import { classFromRate, skills } from "@/app/constants/skill";
 
 export default function Skills() {
   return (

@@ -1,12 +1,9 @@
-import { ScrollId } from "./constants/scrollId";
-import Home from "./components/Home";
-import Resume from "./components/Resume";
-import Blog from "./components/Blog";
-import Presentation from "./components/Presentation";
-import Contact from "./components/Contact";
-import { InView } from "react-intersection-observer";
-import { IntersectionObserver } from "./components/IntersectionObserver";
-import { headlines } from "./context/headline.context";
+import Home from "@/app/components//Home";
+import Resume from "@/app/components/Resume";
+import Blog from "@/app/components/Blog";
+import Presentation from "@/app/components/Presentation";
+import Contact from "@/app/components/Contact";
+import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 export default function Page() {
   return (
