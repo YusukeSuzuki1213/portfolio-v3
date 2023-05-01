@@ -1,4 +1,4 @@
-type PresentationType = {
+type TechTalkType = {
   title: string;
   subtitle: string;
   date: string;
@@ -6,7 +6,7 @@ type PresentationType = {
   imageUrl: string;
 };
 
-export const presentations: PresentationType[] = [
+export const techTalks: TechTalkType[] = [
   {
     title: "Android Vitalsのデータを自動監視してビジネス指標を向上させよう",
     subtitle:

@@ -1,7 +1,7 @@
 import Home from "@/app/components//Home";
 import Resume from "@/app/components/Resume";
 import Blog from "@/app/components/Blog";
-import Presentation from "@/app/components/Presentation";
+import TechTalk from "@/app/components/TechTalk";
 import Contact from "@/app/components/Contact";
 import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
@@ -22,7 +22,7 @@ export default function Page() {
       </div>
 
       <div className="min-h-screen pt-24 lg:mx-28">
-        <Presentation />
+        <TechTalk />
       </div>
 
       <div className="min-h-screen pt-24 lg:mx-28">
