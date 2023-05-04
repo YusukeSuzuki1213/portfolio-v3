@@ -20,6 +20,7 @@ export default function Home() {
                 key={account.icon}
                 href={account.url}
                 target="_blank"
+                className="text-gray-400 hover:text-white"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon
