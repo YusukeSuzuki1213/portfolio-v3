@@ -98,7 +98,7 @@ export default function Contact() {
         <div className="relative mb-6">
           <SubHeading text="How to contact" />
         </div>
-        <ul className="ml-4 max-w-md space-y-1 list-disc list-inside text-gray-200">
+        <ul className="ml-7 max-w-md space-y-1 list-disc text-gray-200 list-outside">
           <li>Fill in the form below</li>
           <li>
             Send an email to &quot;
