@@ -7,7 +7,7 @@ import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 export default function Page() {
   return (
-    <main className="pb-10">
+    <main className="pb-20">
       <IntersectionObserver id="home" />
       <div className="min-h-screen flex flex-col items-center justify-center">
         <Home />
