@@ -2,12 +2,12 @@ import Home from "@/app/components//Home";
 import Resume from "@/app/components/Resume";
 import Blog from "@/app/components/Blog";
 import TechTalk from "@/app/components/TechTalk";
-import Contact from "@/app/components/Contact";
+import Contact from "@/app/components/Contact/Contact";
 import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 export default function Page() {
   return (
-    <main>
+    <main className="pb-10">
       <IntersectionObserver id="home" />
       <div className="min-h-screen flex flex-col items-center justify-center">
         <Home />
@@ -25,7 +25,7 @@ export default function Page() {
         <TechTalk />
       </div>
 
-      <div className="min-h-screen pt-24 lg:mx-28">
+      <div className="min-h-screen pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-48">
         <Contact />
       </div>
     </main>

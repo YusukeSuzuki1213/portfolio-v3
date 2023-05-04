@@ -9,7 +9,7 @@ export default function Skills() {
             <div className="mb-2 text-base font-medium text-white">
               {skill.text}
             </div>
-            <div className="w-full rounded-full h-2.5 mb-4 bg-gray-700">
+            <div className="w-full rounded-full h-2.5 mb-4 bg-neutral-700">
               <div
                 className={`bg-green-500 h-2.5 rounded-full ${classFromRate(
                   skill.rate

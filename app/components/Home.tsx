@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import { serviceAccounts, toAwesomeIcon } from "../constants/serviceAccount";
 
 export default function Home() {
   return (
@@ -14,20 +14,21 @@ export default function Home() {
           Software engineer based in Japan.
         </p>
         <div className="flex items-center space-x-4">
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon className="w-5 h-5" icon={faGithub} />
-          </a>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon className="w-5 h-5" icon={faTwitter} />
-          </a>
+          {serviceAccounts.map((account) => {
+            return (
+              <a
+                key={account.icon}
+                href={account.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  className="w-5 h-5"
+                  icon={toAwesomeIcon(account.icon)}
+                />
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

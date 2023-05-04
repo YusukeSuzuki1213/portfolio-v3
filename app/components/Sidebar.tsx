@@ -26,7 +26,7 @@ export default function Sidebar() {
                     headline.id
                   )}`}
                   to={headline.id}
-                  offset={-160}
+                  offset={-100}
                   smooth={true}
                 >
                   <span className="text-base">{headline.displayText}</span>

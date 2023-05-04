@@ -23,7 +23,9 @@ export default function Navbar() {
             type="button"
             aria-controls="navbar-default"
             aria-expanded="false"
-            onClick={() => setIsMenuOpened(!isMenuOpened)}
+            onClick={() => {
+              setIsMenuOpened(!isMenuOpened);
+            }}
           >
             <FontAwesomeIcon
               className="w-5 h-5"
@@ -47,7 +49,7 @@ export default function Navbar() {
                       headline.id
                     )} hover:cursor-pointer`}
                     to={headline.id}
-                    offset={-160}
+                    offset={-150}
                     smooth={true}
                     aria-current="page"
                     onClick={() => setIsMenuOpened(false)}
