@@ -17,7 +17,7 @@ export const techTalks: TechTalkType[] = [
       "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vasilyjp/20220729/20220729121317.jpg",
   },
   {
-    title: "Android Vitalsのデータを自動監視してビジネス指標を向上させよう",
+    title: "Android Vitalsのデータを自動監視してビジネス指標う",
     subtitle:
       "2022年3月にPlay Developer Reporting APIが公開され、Vitalsの指標をAPI経由で取得することが可能になり、監視の自動化や分析をより簡単に行うことが可能になりました。",
     date: "15 Feb 2022",

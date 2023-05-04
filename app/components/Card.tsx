@@ -14,7 +14,7 @@ export default function Card(props: Props) {
       <a href={props.url} target="_blank">
         <Image
           width={800}
-          height={800}
+          height={500}
           className="rounded-t-lg"
           src={props.imageUrl}
           alt=""
