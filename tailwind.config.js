@@ -18,7 +18,7 @@ module.exports = {
       animation: {
         "slide-left": "slide-left 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both",
         "slide-bottom": "slide-bottom 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both",
-        "distorted-circle": 'distorted-circle 10s ease-in-out 1s infinite'
+        "distorted-circle": 'distorted-circle 7s ease-in-out 1s infinite'
       },
       keyframes: {
         "distorted-circle": {

@@ -17,10 +17,10 @@ export default function Career() {
               <h3 className="text-xl font-semibold text-white">
                 {career.title}
               </h3>
-              <time className="block text-sm font-normal leading-none text-gray-500">
+              <time className="block text-sm font-normal text-gray-500">
                 {career.subtitle}
               </time>
-              <p className="text-base font-normal text-gray-400">
+              <p className=" text-base font-normal text-gray-400">
                 {career.description}
               </p>
               <span className="bg-green-500 text-white text-sm font-medium px-2.5 py-0.5 rounded mr-auto">

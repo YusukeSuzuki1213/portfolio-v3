@@ -14,10 +14,6 @@ export const skills: SkillType[] = [
     text: "Web Development (Next.js)",
     rate: "60%",
   },
-  {
-    text: "Python",
-    rate: "75%",
-  },
 ];
 
 export const classFromRate = (rate: Rate) => {
