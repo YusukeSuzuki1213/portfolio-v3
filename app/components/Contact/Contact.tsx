@@ -74,7 +74,7 @@ export default function Contact() {
       {notificationState.notification && (
         <div
           key={Math.random()}
-          className="animate-slide-bottom sm:animate-slide-left fixed flex flex-col space-y-4 items-center sm:items-start right-0 left-0 -top-24 w-full sm:-right-80 sm:left-auto sm:top-20 sm:w-auto"
+          className="animate-slide-bottom sm:animate-slide-left fixed flex flex-col space-y-4 items-center sm:items-start right-0 left-0 -top-24 w-full sm:-right-80 sm:left-auto sm:top-20 sm:w-auto z-50"
         >
           <Notification
             message={notificationState.notification.message}
