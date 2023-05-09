@@ -1,6 +1,8 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { serviceAccounts, toAwesomeIcon } from "../constants/serviceAccount";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Home() {
   return (
@@ -9,7 +11,16 @@ export default function Home() {
         <Image src="" alt="アバターアイコン" width={500} height={500} />
       </div>
       <div className="flex flex-col items-center space-y-6 mt-6 lg:items-start lg:space-y-10 lg:space-x-0 lg:mt-0">
-        <p className="text-4xl lg:text-6xl">Yusuke Suzuki</p>
+        <div className="text-4xl lg:text-6xl">
+          <Typewriter
+            words={["Yusike", "Yusuke Suzuki"]}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={100}
+            delaySpeed={500}
+          />
+        </div>
         <p className="italic text-gray-300">
           Software engineer based in Japan.
         </p>
