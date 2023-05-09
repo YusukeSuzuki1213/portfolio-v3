@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
-      <div className="w-56 h-56 lg:w-64 lg:h-64 animate-distorted-circle overflow-hidden rounded-distorted-circle">
+      <div className="w-56 h-56 lg:w-64 lg:h-64 animate-distorted-circle overflow-hidden rounded-distorted-circle bg-neutral-800">
         <Image
           src="/avatar.jpg"
           alt="アバターアイコン"
