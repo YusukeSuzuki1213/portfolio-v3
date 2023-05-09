@@ -1,4 +1,5 @@
 "use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { serviceAccounts, toAwesomeIcon } from "../constants/serviceAccount";
@@ -7,8 +8,13 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
-      <div className="w-56 h-56 lg:w-64 lg:h-64 animate-distorted-circle overflow-hidden bg-white">
-        <Image src="" alt="アバターアイコン" width={500} height={500} />
+      <div className="w-56 h-56 lg:w-64 lg:h-64 animate-distorted-circle overflow-hidden rounded-distorted-circle">
+        <Image
+          src="/avatar.jpg"
+          alt="アバターアイコン"
+          width={500}
+          height={500}
+        />
       </div>
       <div className="flex flex-col items-center space-y-6 mt-6 lg:items-start lg:space-y-10 lg:space-x-0 lg:mt-0">
         <div className="text-4xl lg:text-6xl">
