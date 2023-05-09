@@ -11,7 +11,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head />
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Yusuke's portfolio" />
+        <meta property="og:site_name" content="Yusuke's portfolio" />
+        <meta property="og:image" content="/ogp.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>Yusuke Suzuki Portfolio</title>
+      </head>
       <HeadlineContextProvider>
         <body>
           <header>
