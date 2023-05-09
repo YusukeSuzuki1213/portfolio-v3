@@ -13,19 +13,19 @@ export default function Page() {
         <Home />
       </div>
 
-      <div className="min-h-screen pt-24 flex flex-col items-center space-y-24 ml-12 mr-8 lg:ml-44 lg:mr-40">
+      <div className="min-h-screen pt-24 flex flex-col items-center space-y-24 ml-12 mr-8 md:ml-40 md:mr-36 lg:ml-44 lg:mr-40">
         <Resume />
       </div>
 
-      <div className="min-h-screen pt-24 lg:mx-28">
+      <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
         <Blog />
       </div>
 
-      <div className="min-h-screen pt-24 lg:mx-28">
+      <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
         <TechTalk />
       </div>
 
-      <div className="min-h-screen pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-48">
+      <div className="min-h-screen pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-44">
         <Contact />
       </div>
     </main>
