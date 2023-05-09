@@ -17,7 +17,7 @@ export default function Footer() {
                   key={account.url}
                   href={account.url}
                   target="_blank"
-                  className="text-gray-500 hover:text-white"
+                  className="text-gray-400 hover:text-white"
                 >
                   <FontAwesomeIcon
                     className="w-5 h-5"
