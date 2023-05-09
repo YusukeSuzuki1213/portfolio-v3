@@ -1,4 +1,4 @@
-import { Id } from "@/app/context/headline.context";
+import { Id } from "../constants/headline";
 import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 type Props = {
