@@ -8,21 +8,21 @@ type TechTalkType = {
 
 export const techTalks: TechTalkType[] = [
   {
-    title: "Android Vitalsのデータを自動監視してビジネス指標を向上させよう",
+    title:
+      "【DroidKaigi 2022】Android Vitalsのデータを自動監視してビジネス指標を向上させよう",
     subtitle:
       "2022年3月にPlay Developer Reporting APIが公開され、Vitalsの指標をAPI経由で取得することが可能になり、監視の自動化や分析をより簡単に行うことが可能になりました。",
-    date: "05 April 2021",
+    date: "05 Oct 2022",
     url: "https://droidkaigi.jp/2022/timetable/364446",
-    imageUrl:
-      "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vasilyjp/20220729/20220729121317.jpg",
+    imageUrl: "/tech_talk_droidkaigi.jpeg",
   },
   {
-    title: "Android Vitalsのデータを自動監視してビジネス指標う",
+    title: "【ZOZO Tech Talk #1】Android Lintでコードの宣言順をチェックする",
     subtitle:
-      "2022年3月にPlay Developer Reporting APIが公開され、Vitalsの指標をAPI経由で取得することが可能になり、監視の自動化や分析をより簡単に行うことが可能になりました。",
-    date: "15 Feb 2022",
-    url: "https://droidkaigi.jp/2022/timetable/364446",
+      "「ZOZO Tech Talk #1 - Android」は株式会社ZOZOが主催するオンラインイベントです。",
+    date: "06 Dec 2021",
+    url: "https://zozotech-inc.connpass.com/event/230668/",
     imageUrl:
-      "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vasilyjp/20220729/20220729121317.jpg",
+      "https://connpass-tokyo.s3.amazonaws.com/thumbs/e9/23/e9230bd3ea5f1e795b3b9463c880208e.png",
   },
 ];

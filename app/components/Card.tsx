@@ -15,7 +15,7 @@ export default function Card(props: Props) {
         <Image
           width={800}
           height={500}
-          className="rounded-t-lg"
+          className="rounded-t-lg object-cover h-52 w-full"
           src={props.imageUrl}
           alt=""
         />
