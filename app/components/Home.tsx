@@ -17,7 +17,7 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col items-center space-y-6 mt-6 lg:items-start lg:space-y-10 lg:space-x-0 lg:mt-0">
-        <div className="text-4xl lg:text-6xl">
+        <div className="text-4xl lg:text-6xl text-white">
           <Typewriter
             words={["Yusike", "Yusuke Suzuki"]}
             loop={1}
