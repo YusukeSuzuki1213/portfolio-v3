@@ -6,7 +6,8 @@ import Footer from "./components/Footer";
 
 const siteName = "Yusuke's portfolio";
 const description = "This is Yusuke's portfolio site.";
-const url = "https://本番のドメイン";
+const url = "https://portfolio-v3-cpj5.vercel.app/";
+const twitterAccount = "@s1u2z1u3ki";
 
 export const metadata = {
   title: {
@@ -27,8 +28,8 @@ export const metadata = {
     card: "summary_large_image",
     title: siteName,
     description,
-    site: "@s1u2z1u3ki",
-    creator: "@s1u2z1u3ki",
+    site: twitterAccount,
+    creator: twitterAccount,
   },
   alternates: {
     canonical: url,
