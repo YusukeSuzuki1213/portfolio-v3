@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 const siteName = "Yusuke's portfolio";
 const description = "This is Yusuke's portfolio site.";
-const url = "https://portfolio-v3-cpj5.vercel.app/";
+const url = "https://yusuke-suzuki.site/";
 const twitterAccount = "@s1u2z1u3ki";
 
 export const metadata = {
