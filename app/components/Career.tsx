@@ -9,7 +9,7 @@ export default function Career() {
           <li key={career.title} className="mb-14 ml-10">
             <span className="absolute flex items-center justify-center w-10 h-10 bg-green-500 rounded-full -left-5 ring-8 ring-gray-800">
               <FontAwesomeIcon
-                className="w-5 h-5"
+                className="w-5 h-5 text-white"
                 icon={toAwesomeIcon(career.icon)}
               />
             </span>

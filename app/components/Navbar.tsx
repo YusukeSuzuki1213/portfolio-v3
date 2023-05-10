@@ -28,7 +28,7 @@ export default function Navbar() {
             }}
           >
             <FontAwesomeIcon
-              className="w-5 h-5"
+              className="w-5 h-5 text-white"
               icon={isMenuOpened ? faXmark : faBars}
             />
           </button>
