@@ -4,6 +4,37 @@ import Sidebar from "@/app/components/Sidebar";
 import { HeadlineContextProvider } from "@/app/context/headline.context";
 import Footer from "./components/Footer";
 
+const siteName = "Yusuke's portfolio";
+const description = "This is Yusuke's portfolio site.";
+const url = "https://本番のドメイン";
+
+export const metadata = {
+  title: {
+    default: siteName,
+    /** `next-seo`の`titleTemplate`に相当する機能 */
+    template: `%s - ${siteName}`,
+  },
+  description,
+  openGraph: {
+    title: siteName,
+    description,
+    url,
+    siteName,
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description,
+    site: "@s1u2z1u3ki",
+    creator: "@s1u2z1u3ki",
+  },
+  alternates: {
+    canonical: url,
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -11,16 +42,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Yusuke's portfolio" />
-        <meta property="og:site_name" content="Yusuke's portfolio" />
-        <meta property="og:image" content="/ogp.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>Yusuke Suzuki Portfolio</title>
-      </head>
       <HeadlineContextProvider>
         <body>
           <header>
