@@ -17,7 +17,7 @@ export const careers: CareerType[] = [
   {
     title: "Bachelor's Degree",
     subtitle: "Faculty of Informatics, Shizuoka University",
-    description: `I majored in computer science and received the president's commendation while in school. I also actively participated in hackathons and internships.`,
+    description: `I majored in computer science and received the president's commendation. I also actively participated in hackathons and internships.`,
     period: "2016 - 2020",
     icon: "graduationCap",
   },
