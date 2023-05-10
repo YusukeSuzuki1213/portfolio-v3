@@ -98,7 +98,7 @@ export default function Contact() {
         <div className="relative mb-6">
           <SubHeading text="How to contact" />
         </div>
-        <p className="mb-5">
+        <p className="mb-5 text-white">
           Please contact us using any of the following three methods.
         </p>
         <ul className="ml-7 max-w-md space-y-1 list-disc text-gray-300 list-outside">
