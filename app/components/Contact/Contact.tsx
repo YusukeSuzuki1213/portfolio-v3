@@ -104,9 +104,8 @@ export default function Contact() {
         <ul className="ml-7 max-w-md space-y-1 list-disc text-gray-300 list-outside">
           <li>Fill in the form below</li>
           <li>
-            Send an email to &quot;
+            Send an email to&nbsp;
             <span className="italic text-green-500">{myEmailAddress}</span>
-            &quot;
           </li>
           <li>
             Send me a direct message on Twitter (&nbsp;
