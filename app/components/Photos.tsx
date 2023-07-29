@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { photoList } from "@/app/constants/photos";
+import Link from "next/link";
 
 export default async function Photos() {
   return (
@@ -33,13 +34,15 @@ export default async function Photos() {
           })}
         </div>
         <div className="text-center mt-12 w-full sm:w-1/2 md:w-1/3">
-          <button className="text-green-500 hover:text-white border border-green-500 hover:bg-green-500 hover:border-green-500 font-medium rounded-lg py-2.5 text-center text-sm w-full">
-            <span>View all&nbsp;&nbsp;</span>
-            <FontAwesomeIcon
-              className="w-3.5 h-3.5 text-right"
-              icon={faArrowRight}
-            />
-          </button>
+          <Link href="/gallery">
+            <button className="text-green-500 hover:text-white border border-green-500 hover:bg-green-500 hover:border-green-500 font-medium rounded-lg py-2.5 text-center text-sm w-full">
+              <span>View all&nbsp;&nbsp;</span>
+              <FontAwesomeIcon
+                className="w-3.5 h-3.5 text-right"
+                icon={faArrowRight}
+              />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
