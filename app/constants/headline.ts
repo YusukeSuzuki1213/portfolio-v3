@@ -1,4 +1,4 @@
-export type Id = "home" | "resume" | "blog" | "techTalk" | "contact";
+export type Id = "home" | "resume" | "blog" | "techTalk" | "photos" | "contact";
 
 export type Headline = {
   readonly id: Id;
@@ -21,6 +21,10 @@ export const headlines: Headline[] = [
   {
     id: "techTalk",
     displayText: "Tech Talk",
+  },
+  {
+    id: "photos",
+    displayText: "Photos",
   },
   {
     id: "contact",
