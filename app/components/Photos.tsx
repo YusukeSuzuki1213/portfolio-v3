@@ -2,22 +2,9 @@ import Heading from "@/app/components/Heading";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { randomElementsFromArray } from "@/app/helper/randomElementsFromArray";
-import { glob } from "glob";
+import { photoList } from "@/app/constants/photos";
 
 export default async function Photos() {
-  const imagePath = (await glob("public/travel/**/*.{jpeg,jpg,JPG}")).map(
-    (image) => {
-      return image.replace("public", "");
-    }
-  );
-
-  const imageList = [
-    randomElementsFromArray(imagePath, 3),
-    randomElementsFromArray(imagePath, 3),
-    randomElementsFromArray(imagePath, 3),
-  ];
-
   return (
     <div>
       <div className="mb-16">
@@ -25,17 +12,17 @@ export default async function Photos() {
       </div>
       <div className="flex flex-wrap flex-col items-center justify-center mx-6">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {imageList.map((images) => {
+          {photoList.map((photos) => {
             return (
-              <div key={images.toString()}>
-                {images.map((image) => {
+              <div key={photos.toString()}>
+                {photos.map((photo) => {
                   return (
-                    <div key={image} className="mb-4">
+                    <div key={photo.path} className="mb-4">
                       <Image
                         className="h-auto max-w-full rounded-md"
                         width={512}
                         height={0}
-                        src={image}
+                        src={photo.path}
                         alt=""
                       />
                     </div>
