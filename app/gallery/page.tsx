@@ -5,8 +5,8 @@ import Heading from "@/app/components/Heading";
 
 export default function GalleryPage() {
   return (
-    <div>
-      <div className="my-8">
+    <div className="bg-neutral-900">
+      <div className="py-8">
         <Heading id="gallery" text="Gallery" />
       </div>
       <Gallery galleries={galleries} />
