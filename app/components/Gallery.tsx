@@ -14,8 +14,8 @@ export default function Gallery(props: Props) {
     const baseStyle =
       "text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 border border-green-500 hover:text-white hover:bg-green-500 rounded-full text-center";
     return targetCategory == category
-      ? baseStyle + "text-white bg-green-500 border-green-500"
-      : baseStyle + "text-green-500 bg-black";
+      ? `${baseStyle} text-white bg-green-500 border-green-500`
+      : `${baseStyle} text-white bg-black`;
   };
 
   return (
