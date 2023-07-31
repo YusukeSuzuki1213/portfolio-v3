@@ -13,7 +13,7 @@ export type Category =
   | "vietnam";
 
 export type Gallery = {
-  readonly categoryName: Category;
+  readonly category: Category;
   readonly categoryDisplayName: string;
   readonly pathList: string[];
 };
@@ -26,52 +26,52 @@ const pathList = (folder: string) => {
 
 export const galleries: Gallery[] = [
   {
-    categoryName: "all",
+    category: "all",
     categoryDisplayName: "All categories",
     pathList: pathList("travel/**"),
   },
   {
-    categoryName: "cambodia",
+    category: "cambodia",
     categoryDisplayName: "Cambodia",
     pathList: pathList("travel/cambodia"),
   },
   {
-    categoryName: "japan",
+    category: "japan",
     categoryDisplayName: "Japan",
     pathList: pathList("travel/japan"),
   },
   {
-    categoryName: "malaysia",
+    category: "malaysia",
     categoryDisplayName: "Malaysia",
     pathList: pathList("travel/malaysia"),
   },
   {
-    categoryName: "philippines",
+    category: "philippines",
     categoryDisplayName: "Philippines",
     pathList: pathList("travel/philippines"),
   },
   {
-    categoryName: "singapore",
+    category: "singapore",
     categoryDisplayName: "Singapore",
     pathList: pathList("travel/singapore"),
   },
   {
-    categoryName: "taiwan",
+    category: "taiwan",
     categoryDisplayName: "Taiwan",
     pathList: pathList("travel/taiwan"),
   },
   {
-    categoryName: "thailand",
+    category: "thailand",
     categoryDisplayName: "Thailand",
     pathList: pathList("travel/thailand"),
   },
   {
-    categoryName: "usa",
+    category: "usa",
     categoryDisplayName: "USA",
     pathList: pathList("travel/usa"),
   },
   {
-    categoryName: "vietnam",
+    category: "vietnam",
     categoryDisplayName: "Vietnam",
     pathList: pathList("travel/vietnam"),
   },

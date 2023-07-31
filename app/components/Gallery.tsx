@@ -10,6 +10,14 @@ type Props = {
 
 export default function Gallery(props: Props) {
   const [category, setCategory] = useState<Category>("all");
+  const buttonStyle = (targetCategory: Category) => {
+    const baseStyle =
+      "hover:text-white border border-green-500 hover:bg-green-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3";
+
+    return targetCategory == category
+      ? baseStyle + "text-white bg-green-500 border-green-500"
+      : baseStyle + "text-green-500 bg-black";
+  };
 
   return (
     <div className="mx-16">
@@ -18,10 +26,10 @@ export default function Gallery(props: Props) {
           {props.galleries.map((gallery) => {
             return (
               <button
-                key={gallery.categoryName}
+                key={gallery.category}
                 type="button"
-                className="text-green-500 hover:text-white border border-green-500 bg-black hover:bg-green-500 focus:bg-green-500 focus:text-white rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3"
-                onClick={() => setCategory(gallery.categoryName)}
+                className={buttonStyle(gallery.category)}
+                onClick={() => setCategory(gallery.category)}
               >
                 {gallery.categoryDisplayName}
               </button>
@@ -30,7 +38,7 @@ export default function Gallery(props: Props) {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {props.galleries
-            .find((gallery) => gallery.categoryName == category)
+            .find((gallery) => gallery.category == category)
             ?.pathList.map((path) => {
               return (
                 <Image
