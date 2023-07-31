@@ -32,47 +32,47 @@ export const galleries: Gallery[] = [
   },
   {
     category: "cambodia",
-    categoryDisplayName: "Cambodia",
+    categoryDisplayName: "🇰🇭 Cambodia",
     pathList: pathList("travel/cambodia"),
   },
   {
     category: "japan",
-    categoryDisplayName: "Japan",
+    categoryDisplayName: "🇯🇵 Japan",
     pathList: pathList("travel/japan"),
   },
   {
     category: "malaysia",
-    categoryDisplayName: "Malaysia",
+    categoryDisplayName: "🇲🇾 Malaysia",
     pathList: pathList("travel/malaysia"),
   },
   {
     category: "philippines",
-    categoryDisplayName: "Philippines",
+    categoryDisplayName: "🇵🇭 Philippines",
     pathList: pathList("travel/philippines"),
   },
   {
     category: "singapore",
-    categoryDisplayName: "Singapore",
+    categoryDisplayName: "🇸🇬 Singapore",
     pathList: pathList("travel/singapore"),
   },
   {
     category: "taiwan",
-    categoryDisplayName: "Taiwan",
+    categoryDisplayName: "🇹🇼 Taiwan",
     pathList: pathList("travel/taiwan"),
   },
   {
     category: "thailand",
-    categoryDisplayName: "Thailand",
+    categoryDisplayName: "🇹🇭 Thailand",
     pathList: pathList("travel/thailand"),
   },
   {
     category: "usa",
-    categoryDisplayName: "USA",
+    categoryDisplayName: "🇺🇸 USA",
     pathList: pathList("travel/usa"),
   },
   {
     category: "vietnam",
-    categoryDisplayName: "Vietnam",
+    categoryDisplayName: "🇻🇳 Vietnam",
     pathList: pathList("travel/vietnam"),
   },
 ];
