@@ -37,8 +37,4 @@ export const headlines: Headline[] = [
     id: "contact",
     displayText: "Contact",
   },
-  {
-    id: "gallery",
-    displayText: "Gallery",
-  },
 ];
