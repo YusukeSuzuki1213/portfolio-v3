@@ -12,17 +12,16 @@ export default function Gallery(props: Props) {
   const [category, setCategory] = useState<Category>("all");
   const buttonStyle = (targetCategory: Category) => {
     const baseStyle =
-      "hover:text-white border border-green-500 hover:bg-green-500 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3";
-
+      "text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 border border-green-500 hover:text-white hover:bg-green-500 rounded-full text-center";
     return targetCategory == category
       ? baseStyle + "text-white bg-green-500 border-green-500"
       : baseStyle + "text-green-500 bg-black";
   };
 
   return (
-    <div className="mx-6 lg:mx-8">
+    <div className="mx-4 lg:mx-8">
       <div>
-        <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
+        <div className="flex flex-wrap justify-items-start py-4 md:py-8 gap-2">
           {props.galleries.map((gallery) => {
             return (
               <button
