@@ -21,7 +21,7 @@ export default function Gallery(props: Props) {
   return (
     <div className="mx-4 lg:mx-8">
       <div>
-        <div className="flex flex-wrap justify-items-start py-4 md:py-8 gap-2">
+        <div className="flex flex-wrap justify-items-start mb-4 md:mb-6 gap-2">
           {props.galleries.map((gallery) => {
             return (
               <button
