@@ -2,7 +2,7 @@ import Heading from "@/app/components/Heading";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { photoList } from "@/app/constants/photos";
+import { photos } from "@/app/constants/photos";
 import Link from "next/link";
 
 export default async function Photos() {
@@ -12,24 +12,17 @@ export default async function Photos() {
         <Heading id="photos" text="Photos" />
       </div>
       <div className="flex flex-wrap flex-col items-center justify-center mx-6">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {photoList.map((photos) => {
+        <div className="columns-1 md:columns-3">
+          {photos.map((photo) => {
             return (
-              <div key={photos.toString()}>
-                {photos.map((photo) => {
-                  return (
-                    <div key={photo.path} className="mb-4">
-                      <Image
-                        className="h-auto max-w-full rounded-md"
-                        width={512}
-                        height={0}
-                        src={photo.path}
-                        alt=""
-                      />
-                    </div>
-                  );
-                })}
-              </div>
+              <Image
+                key={photo.path}
+                className="h-auto max-w-full rounded-md mb-4"
+                width={512}
+                height={0}
+                src={photo.path}
+                alt=""
+              />
             );
           })}
         </div>

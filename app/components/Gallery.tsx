@@ -20,7 +20,7 @@ export default function Gallery(props: Props) {
   };
 
   return (
-    <div className="mx-16">
+    <div className="mx-6 lg:mx-8">
       <div>
         <div className="flex items-center justify-center py-4 md:py-8 flex-wrap">
           {props.galleries.map((gallery) => {
@@ -36,14 +36,14 @@ export default function Gallery(props: Props) {
             );
           })}
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
           {props.galleries
             .find((gallery) => gallery.category == category)
             ?.pathList.map((path) => {
               return (
                 <Image
                   key={path}
-                  className="h-auto max-w-full rounded-md"
+                  className="h-auto max-w-full mb-4 rounded-md"
                   width={512}
                   height={0}
                   src={path}
