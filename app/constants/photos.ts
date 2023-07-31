@@ -4,30 +4,30 @@ export type Photo = {
 
 export const photos: Photo[] = [
   {
-    path: "/travel/philippines/GOPR0246.JPG",
+    path: "/travel/philippines/4.jpeg",
   },
   {
-    path: "/travel/vietnam/Z7DmN91NQt6aShnrYMPYWA.jpeg",
+    path: "/travel/vietnam/11.jpeg",
   },
   {
-    path: "/travel/singapore/4vV3Yb-5RFeqOI9C5mjlmw.jpeg",
+    path: "/travel/singapore/1.jpeg",
   },
   {
-    path: "/travel/taiwan/dNhaF-M-THGw373UrJ8b7w.jpeg",
+    path: "/travel/taiwan/5.jpeg",
   },
   {
-    path: "/travel/thailand/Jda6uKUFTf2xDcoMaUhZFg.jpeg",
+    path: "/travel/thailand/13.jpeg",
   },
   {
-    path: "/travel/usa/rmWgiln4RhaihNayWY1Wkg.jpeg",
+    path: "/travel/usa/8.jpeg",
   },
   {
-    path: "/travel/philippines/IMG_0848.jpeg",
+    path: "/travel/philippines/7.jpeg",
   },
   {
-    path: "/travel/japan/ZrS0AY_yQSm7luafDXLEWg.jpeg",
+    path: "/travel/japan/103.jpeg",
   },
   {
-    path: "/travel/japan/onVVNWTvQGeog_EqazLbiA.jpeg",
+    path: "/travel/japan/64.jpeg",
   },
 ];
