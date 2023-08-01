@@ -38,14 +38,14 @@ export default function Gallery(props: Props) {
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
           {props.galleries
             .find((gallery) => gallery.category == category)
-            ?.pathList.map((path) => {
+            ?.photos.map((photo) => {
               return (
                 <Image
-                  key={path}
+                  key={photo.path}
                   className="h-auto max-w-full mb-4 rounded-md"
                   width={512}
                   height={0}
-                  src={path}
+                  src={photo.path}
                   alt=""
                 />
               );

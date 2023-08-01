@@ -1,4 +1,5 @@
 import { glob } from "glob";
+import { Photo } from "@/app/constants/photos";
 
 export type Category =
   | "all"
@@ -15,64 +16,104 @@ export type Category =
 export type Gallery = {
   readonly category: Category;
   readonly categoryDisplayName: string;
-  readonly pathList: string[];
+  readonly photos: Photo[];
 };
 
-const pathList = (folder: string) => {
+const getPhotos = (folder: string): Photo[] => {
   return glob
     .sync(`public/${folder}/*.{jpg,jpeg,png}`)
-    .map((path) => path.replace("public", ""));
+    .map((path) => {
+      return { path: path.replace("public", "") };
+    })
+    .slice()
+    .sort((_, __) => 0.5 - Math.random()); // ランダムシャッフル
 };
 
 export const galleries: Gallery[] = [
   {
     category: "all",
     categoryDisplayName: "All categories",
-    pathList: pathList("travel/**"),
+    photos: getPhotos("travel/**"),
   },
   {
     category: "cambodia",
     categoryDisplayName: "🇰🇭 Cambodia",
-    pathList: pathList("travel/cambodia"),
+    photos: [
+      {
+        path: "/travel/cambodia/1.jpeg",
+      },
+    ],
   },
   {
     category: "japan",
     categoryDisplayName: "🇯🇵 Japan",
-    pathList: pathList("travel/japan"),
+    photos: [
+      {
+        path: "/travel/japan/1.jpeg",
+      },
+    ],
   },
   {
     category: "malaysia",
     categoryDisplayName: "🇲🇾 Malaysia",
-    pathList: pathList("travel/malaysia"),
+    photos: [
+      {
+        path: "/travel/malaysia/1.jpeg",
+      },
+    ],
   },
   {
     category: "philippines",
     categoryDisplayName: "🇵🇭 Philippines",
-    pathList: pathList("travel/philippines"),
+    photos: [
+      {
+        path: "/travel/philippines/1.jpeg",
+      },
+    ],
   },
   {
     category: "singapore",
     categoryDisplayName: "🇸🇬 Singapore",
-    pathList: pathList("travel/singapore"),
+    photos: [
+      {
+        path: "/travel/singapore/1.jpeg",
+      },
+    ],
   },
   {
     category: "taiwan",
     categoryDisplayName: "🇹🇼 Taiwan",
-    pathList: pathList("travel/taiwan"),
+    photos: [
+      {
+        path: "/travel/taiwan/1.jpeg",
+      },
+    ],
   },
   {
     category: "thailand",
     categoryDisplayName: "🇹🇭 Thailand",
-    pathList: pathList("travel/thailand"),
+    photos: [
+      {
+        path: "/travel/thailand/1.jpeg",
+      },
+    ],
   },
   {
     category: "usa",
     categoryDisplayName: "🇺🇸 USA",
-    pathList: pathList("travel/usa"),
+    photos: [
+      {
+        path: "/travel/usa/1.jpeg",
+      },
+    ],
   },
   {
     category: "vietnam",
     categoryDisplayName: "🇻🇳 Vietnam",
-    pathList: pathList("travel/vietnam"),
+    photos: [
+      {
+        path: "/travel/vietnam/1.jpeg",
+      },
+    ],
   },
 ];
