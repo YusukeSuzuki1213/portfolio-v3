@@ -38,82 +38,46 @@ export const galleries: Gallery[] = [
   {
     category: "cambodia",
     categoryDisplayName: "🇰🇭 Cambodia",
-    photos: [
-      {
-        path: "/travel/cambodia/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/cambodia"),
   },
   {
     category: "japan",
     categoryDisplayName: "🇯🇵 Japan",
-    photos: [
-      {
-        path: "/travel/japan/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/japan"),
   },
   {
     category: "malaysia",
     categoryDisplayName: "🇲🇾 Malaysia",
-    photos: [
-      {
-        path: "/travel/malaysia/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/malaysia"),
   },
   {
     category: "philippines",
     categoryDisplayName: "🇵🇭 Philippines",
-    photos: [
-      {
-        path: "/travel/philippines/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/philippines"),
   },
   {
     category: "singapore",
     categoryDisplayName: "🇸🇬 Singapore",
-    photos: [
-      {
-        path: "/travel/singapore/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/singapore"),
   },
   {
     category: "taiwan",
     categoryDisplayName: "🇹🇼 Taiwan",
-    photos: [
-      {
-        path: "/travel/taiwan/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/taiwan"),
   },
   {
     category: "thailand",
     categoryDisplayName: "🇹🇭 Thailand",
-    photos: [
-      {
-        path: "/travel/thailand/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/thailand"),
   },
   {
     category: "usa",
     categoryDisplayName: "🇺🇸 USA",
-    photos: [
-      {
-        path: "/travel/usa/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/usa"),
   },
   {
     category: "vietnam",
     categoryDisplayName: "🇻🇳 Vietnam",
-    photos: [
-      {
-        path: "/travel/vietnam/1.jpeg",
-      },
-    ],
+    photos: getPhotos("travel/vietnam"),
   },
 ];
