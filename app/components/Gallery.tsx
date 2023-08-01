@@ -19,39 +19,37 @@ export default function Gallery(props: Props) {
   };
 
   return (
-    <div className="mx-4 lg:mx-8">
-      <div>
-        <div className="flex flex-wrap justify-items-start mb-4 md:mb-6 gap-2">
-          {props.galleries.map((gallery) => {
+    <>
+      <div className="flex flex-wrap justify-items-start mb-4 md:mb-6 gap-2">
+        {props.galleries.map((gallery) => {
+          return (
+            <button
+              key={gallery.category}
+              type="button"
+              className={buttonStyle(gallery.category)}
+              onClick={() => setCategory(gallery.category)}
+            >
+              {gallery.categoryDisplayName}
+            </button>
+          );
+        })}
+      </div>
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
+        {props.galleries
+          .find((gallery) => gallery.category == category)
+          ?.photos.map((photo) => {
             return (
-              <button
-                key={gallery.category}
-                type="button"
-                className={buttonStyle(gallery.category)}
-                onClick={() => setCategory(gallery.category)}
-              >
-                {gallery.categoryDisplayName}
-              </button>
+              <Image
+                key={photo.path}
+                className="h-auto max-w-full mb-4 rounded-md"
+                width={512}
+                height={0}
+                src={photo.path}
+                alt=""
+              />
             );
           })}
-        </div>
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
-          {props.galleries
-            .find((gallery) => gallery.category == category)
-            ?.photos.map((photo) => {
-              return (
-                <Image
-                  key={photo.path}
-                  className="h-auto max-w-full mb-4 rounded-md"
-                  width={512}
-                  height={0}
-                  src={photo.path}
-                  alt=""
-                />
-              );
-            })}
-        </div>
       </div>
-    </div>
+    </>
   );
 }
