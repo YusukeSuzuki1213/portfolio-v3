@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['cdn-ak.f.st-hatena.com', 'connpass-tokyo.s3.amazonaws.com'],
+    domains: ['cdn-ak.f.st-hatena.com', 'media.connpass.com'],
   },
 }
 

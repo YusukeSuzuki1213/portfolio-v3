@@ -23,6 +23,6 @@ export const techTalks: TechTalkType[] = [
     date: "06 Dec 2021",
     url: "https://zozotech-inc.connpass.com/event/230668/",
     imageUrl:
-      "https://connpass-tokyo.s3.amazonaws.com/thumbs/e9/23/e9230bd3ea5f1e795b3b9463c880208e.png",
+      "https://media.connpass.com/thumbs/e9/23/e9230bd3ea5f1e795b3b9463c880208e.png",
   },
 ];
