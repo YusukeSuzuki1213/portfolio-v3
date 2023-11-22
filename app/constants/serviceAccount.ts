@@ -1,12 +1,12 @@
-import { faTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faQ } from "@fortawesome/free-solid-svg-icons";
+import { faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faQ, faZ } from "@fortawesome/free-solid-svg-icons";
 
 type ServiceAccount = {
   url: string;
   icon: Icon;
 };
 
-type Icon = "github" | "twitter" | "qiita";
+type Icon = "github" | "twitter" | "qiita" | "zenn";
 
 export const MY_TWITTER_URL = "https://twitter.com/s1u2z1u3ki";
 
@@ -23,6 +23,10 @@ export const serviceAccounts: ServiceAccount[] = [
     url: "https://qiita.com/YusukeSuzuki1213",
     icon: "qiita",
   },
+  {
+    url: "https://zenn.dev/yusuke_zukki?tab=scraps",
+    icon: "zenn"
+  }
 ];
 
 export const toAwesomeIcon = (icon: Icon) => {
@@ -30,8 +34,10 @@ export const toAwesomeIcon = (icon: Icon) => {
     case "github":
       return faGithub;
     case "twitter":
-      return faTwitter;
+      return faXTwitter;
     case "qiita":
       return faQ;
+    case "zenn":
+      return faZ;
   }
 };
