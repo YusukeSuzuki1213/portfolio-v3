@@ -1,6 +1,7 @@
 import Career from "@/app/components/Career";
 import SubHeading from "@/app/components/SubHeading";
 import Skills from "@/app/components/Skills";
+import Awards from "@/app/components/Awards";
 import Heading from "@/app/components/Heading";
 
 export default function Resume() {
@@ -14,6 +15,12 @@ export default function Resume() {
       </div>
       <div className="mb-20">
         <Career />
+      </div>
+      <div className="relative -left-5 mb-10">
+        <SubHeading text="Awards" />
+      </div>
+      <div className="mb-20">
+        <Awards />
       </div>
       <div className="relative -left-5 mb-10">
         <SubHeading text="Skills" />

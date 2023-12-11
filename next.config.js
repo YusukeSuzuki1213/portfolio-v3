@@ -4,8 +4,8 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['cdn-ak.f.st-hatena.com', 'media.connpass.com'],
+    domains: ["cdn-ak.f.st-hatena.com", "media.connpass.com"],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
