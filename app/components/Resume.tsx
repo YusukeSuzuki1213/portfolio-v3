@@ -17,13 +17,13 @@ export default function Resume() {
       <div className="mb-20">
         <Career />
       </div>
-      <div className="relative -left-5 mb-10">
+      <div className="relative -left-5 mb-8">
         <SubHeading text="Awards" />
       </div>
       <div className="mb-20">
         <Awards />
       </div>
-      <div className="relative -left-5 mb-10">
+      <div className="relative -left-5 mb-8">
         <SubHeading text="Certifications" />
       </div>
       <div className="mb-20">
