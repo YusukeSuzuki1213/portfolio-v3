@@ -3,7 +3,7 @@ import { awards } from "../constants/awards";
 export default function Awards() {
   return (
     <div>
-      <ul className="list-disc leading-loose text-sm">
+      <ul className="list-disc leading-loose text-base">
         {awards.map((award) => (
           <li key={award.title}>
             {award.url ? (
