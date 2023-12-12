@@ -7,6 +7,7 @@ import Photos from "@/app/components/Photos";
 import Navbar from "@/app/components/Navbar";
 import Sidebar from "@/app/components/Sidebar";
 import Footer from "@/app/components/Footer";
+import Works from "@/app/components/Works";
 import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 export default function Page() {
@@ -30,6 +31,9 @@ export default function Page() {
           </div>
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
             <TechTalk />
+          </div>
+          <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
+            <Works />
           </div>
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
             <Photos />

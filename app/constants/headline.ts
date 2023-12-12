@@ -3,6 +3,7 @@ export type Id =
   | "resume"
   | "blog"
   | "techTalk"
+  | "works"
   | "photos"
   | "contact"
   | "gallery";
@@ -28,6 +29,10 @@ export const headlines: Headline[] = [
   {
     id: "techTalk",
     displayText: "Tech Talk",
+  },
+  {
+    id: "works",
+    displayText: "Works",
   },
   {
     id: "photos",
