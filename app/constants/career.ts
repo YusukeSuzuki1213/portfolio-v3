@@ -32,7 +32,8 @@ export const careers: CareerType[] = [
   {
     title: "Freelance Android App Developer",
     subtitle: "",
-    description: "",
+    description:
+      "I am developing Android applications as a freelance engineer for various companies",
     period: "2023 - ",
     icon: "briefcase",
   },
