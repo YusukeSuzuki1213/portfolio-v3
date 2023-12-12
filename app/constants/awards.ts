@@ -19,7 +19,7 @@ export const awards: AwardType[] = [
     title: "TRUNK HACKATHON in OSAKA 第三位, 株式会社千賞",
   },
   {
-    title: "静岡大学 2017年度 後期 学長表彰",
+    title: "静岡大学 学長表彰",
     url: "https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154175",
   },
 ];

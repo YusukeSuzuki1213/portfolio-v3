@@ -29,6 +29,13 @@ export const careers: CareerType[] = [
     period: "2020 - 2023",
     icon: "briefcase",
   },
+  {
+    title: "Freelance Android App Developer",
+    subtitle: "",
+    description: "",
+    period: "2023 - ",
+    icon: "briefcase",
+  },
 ];
 
 export const toAwesomeIcon = (icon: Icon) => {
