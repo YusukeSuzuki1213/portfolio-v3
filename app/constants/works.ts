@@ -23,4 +23,12 @@ export const works: WorksType[] = [
     url: "https://www.youtube.com/watch?v=ZcojaVmAoNA",
     imageUrl: "/monogatari_effect.png",
   },
+  {
+    title: "Smart Bath",
+    subtitle:
+      "マイクに向かってしゃべりかけるとシャワーが出たりBGMが流れたりするだけでなく、入浴後に使用量も通知してくれる入浴が楽しくなるような作品。クラウド型音声認識技術とラズベリーパイ、マイクやスピーカー、電磁弁、ポンプなどを組み合わせて試作しました。",
+    date: "10 Oct 2017",
+    url: "https://www.youtube.com/watch?v=9wnW4UtuwUI",
+    imageUrl: "/smart_path.jpeg",
+  },
 ];
