@@ -12,7 +12,4 @@ export const certifications: CertificationType[] = [
   {
     title: "経済産業省 後援 ジュニアマイスター ゴールド",
   },
-  {
-    title: "AWS Technical Essentials 修了",
-  },
 ];
