@@ -17,7 +17,8 @@ export const careers: CareerType[] = [
   {
     title: "Bachelor's Degree",
     subtitle: "Faculty of Informatics, Shizuoka University",
-    description: `I majored in computer science and received the president's commendation. I also actively participated in hackathons and internships.`,
+    description:
+      "I studied computer science as my major and was honored with a commendation from the president. Additionally, I was actively involved in hackathons and internships.",
     period: "2016 - 2020",
     icon: "graduationCap",
   },
@@ -25,7 +26,7 @@ export const careers: CareerType[] = [
     title: "Android App Developer",
     subtitle: "ZOZO, Inc.",
     description:
-      "I was defining requirements, designing, and coding an Android application for ZOZOTOWN.",
+      "I was working on developing the Android application for ZOZOTOWN.",
     period: "2020 - 2023",
     icon: "briefcase",
   },
@@ -33,7 +34,7 @@ export const careers: CareerType[] = [
     title: "Freelance Android App Developer",
     subtitle: "",
     description:
-      "I am developing Android applications as a freelance engineer for various companies",
+      "I'm developing Android applications as a freelance engineer for various companies",
     period: "2023 - ",
     icon: "briefcase",
   },
