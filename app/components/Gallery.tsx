@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function Gallery(props: Props) {
-  const [category, setCategory] = useState<Category>("all");
+  const [category, setCategory] = useState<Category>("latest");
   const buttonStyle = (targetCategory: Category) => {
     const baseStyle =
       "text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 border border-green-500 hover:text-white hover:bg-green-500 rounded-full text-center";

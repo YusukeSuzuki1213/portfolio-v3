@@ -2,7 +2,7 @@ import { glob } from "glob";
 import { Photo } from "@/app/constants/photos";
 
 export type Category =
-  | "all"
+  | "latest"
   | "cambodia"
   | "japan"
   | "malaysia"
@@ -31,9 +31,9 @@ const getPhotos = (folder: string): Photo[] => {
 
 export const galleries: Gallery[] = [
   {
-    category: "all",
-    categoryDisplayName: "All categories",
-    photos: getPhotos("travel/**"),
+    category: "latest",
+    categoryDisplayName: "⚡ Latest photos",
+    photos: getPhotos("travel/latest"),
   },
   {
     category: "cambodia",

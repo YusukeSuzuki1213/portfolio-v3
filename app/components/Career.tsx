@@ -3,7 +3,7 @@ import { careers, toAwesomeIcon } from "@/app/constants/career";
 
 export default function Career() {
   return (
-    <ol className="relative border-l border-gray-700 w-full">
+    <ol className="relative border-l border-gray-700">
       {careers.map((career) => {
         return (
           <li key={career.title} className="mb-14 ml-10">
