@@ -34,12 +34,12 @@ export default function Gallery(props: Props) {
           );
         })}
       </div>
-      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
-        {props.galleries
-          .find((gallery) => gallery.category == category)
-          ?.photos.map((photo) => {
+      <div className="columns-1 sm:columns-2 md:columns-3">
+        {props.galleries.map((gallery) => {
+          return gallery.photos.map((photo) => {
             return (
               <Image
+                hidden={gallery.category != category}
                 key={photo.path}
                 className="h-auto max-w-full mb-4 rounded-md"
                 width={512}
@@ -48,7 +48,8 @@ export default function Gallery(props: Props) {
                 alt=""
               />
             );
-          })}
+          });
+        })}
       </div>
     </>
   );
