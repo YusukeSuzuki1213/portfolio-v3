@@ -18,11 +18,11 @@ export default function Contact() {
         </p>
         <ul className="ml-7 max-w-md space-y-1 list-disc text-gray-300 list-outside">
           <li>
-            Send an email to&nbsp;
+            Email: &nbsp;
             <span className="italic text-green-500">{myEmailAddress}</span>
           </li>
           <li>
-            Send me a direct message on Twitter (&nbsp;
+            DM: &nbsp;
             <a
               href={MY_TWITTER_URL}
               target="_blank"
@@ -30,7 +30,7 @@ export default function Contact() {
             >
               @s1u2z1u3ki
             </a>
-            &nbsp;)
+            &nbsp;
           </li>
         </ul>
       </div>
