@@ -41,7 +41,7 @@ export default function Gallery(props: Props) {
               <Image
                 hidden={gallery.category != category}
                 key={photo.path}
-                className="h-auto max-w-full mb-4 rounded-md"
+                className="h-auto max-w-full mb-4 rounded-md fadeIn"
                 width={512}
                 height={0}
                 src={photo.path}
