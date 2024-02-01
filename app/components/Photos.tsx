@@ -13,7 +13,7 @@ export default async function Photos() {
       </div>
       <div className="flex flex-wrap flex-col items-center justify-center mx-6">
         <Gallery galleries={homeGalleries} />
-        <div className="text-center mt-12 w-full sm:w-1/2 md:w-1/3">
+        <div className="text-center mt-12 w-full sm:w-1/2 md:w-1/3 fadeIn">
           <Link href="/gallery">
             <button className="text-green-500 hover:text-white border border-green-500 hover:bg-green-500 hover:border-green-500 font-medium rounded-lg py-2.5 text-center text-sm w-full">
               <span>View all&nbsp;&nbsp;</span>
