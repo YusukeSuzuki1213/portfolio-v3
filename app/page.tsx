@@ -2,7 +2,7 @@ import Home from "@/app/components//Home";
 import Resume from "@/app/components/Resume";
 import Blog from "@/app/components/Blog";
 import TechTalk from "@/app/components/TechTalk";
-import Contact from "@/app/components/Contact/Contact";
+import Contact from "@/app/components/Contact";
 import Photos from "@/app/components/Photos";
 import Navbar from "@/app/components/Navbar";
 import Sidebar from "@/app/components/Sidebar";
@@ -38,7 +38,7 @@ export default function Page() {
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
             <Photos />
           </div>
-          <div className="min-h-screen pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-44">
+          <div className="pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-44">
             <Contact />
           </div>
         </main>
