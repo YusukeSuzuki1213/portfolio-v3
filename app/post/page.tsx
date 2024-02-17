@@ -1,9 +1,8 @@
 import Footer from "@/app/components/Footer";
 import Heading from "@/app/components/Heading";
 import { getAllPosts } from "./lib/api";
-import Link from "next/link";
 
-export default function BlogPage() {
+export default function PostPage() {
   const posts = getAllPosts();
 
   return (
