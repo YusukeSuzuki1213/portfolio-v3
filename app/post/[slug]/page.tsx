@@ -24,7 +24,7 @@ export default function Post({ params }: { params: { slug: string } }) {
           </p>
         </div>
         <div
-          className="znc-dark p-8"
+          className="znc-dark p-4 md:p-8"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
