@@ -1,28 +1,36 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-import { Post } from "../type/post";
+import { InternalPostType, ExternalPostType, PostType } from "../../type/post";
+import { posts as externalPosts } from "@/app/constants/externalPosts";
 
 const postsDirectory = join(process.cwd(), "app/post/_posts");
 
-export function getPostSlugs() {
+export function getInternalPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
-export function getPostBySlug(slug: string) {
+export function getInternalPostsBySlug(slug: string): InternalPostType {
   const realSlug = slug.replace(/\.md$/, "");
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Post;
+  return {
+    ...data,
+    slug: realSlug,
+    url: "/post/" + slug,
+    imageUrl: "",
+    content: content,
+  } as InternalPostType;
 }
 
-export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.publishDate > post2.publishDate ? -1 : 1));
-  return posts;
+export function getAllPosts(): InternalPostType[] | ExternalPostType[] {
+  const slugs = getInternalPostSlugs();
+  const internalPosts = slugs.map((slug) => getInternalPostsBySlug(slug));
+  const allPosts: (InternalPostType | ExternalPostType)[] = [
+    ...internalPosts,
+    ...externalPosts,
+  ].sort((post1, post2) => (post1.publishDate > post2.publishDate ? -1 : 1));
+  return allPosts;
 }

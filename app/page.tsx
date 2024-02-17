@@ -1,6 +1,6 @@
 import Home from "@/app/components//Home";
 import Resume from "@/app/components/Resume";
-import Blog from "@/app/components/Blog";
+import Post from "@/app/components/Post";
 import TechTalk from "@/app/components/TechTalk";
 import Contact from "@/app/components/Contact";
 import Photos from "@/app/components/Photos";
@@ -27,7 +27,7 @@ export default function Page() {
             <Resume />
           </div>
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
-            <Blog />
+            <Post />
           </div>
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
             <TechTalk />

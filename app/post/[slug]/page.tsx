@@ -1,10 +1,10 @@
 import "zenn-content-css-dark";
 import markdownToHtml from "zenn-markdown-html";
-import { getPostBySlug, getPostSlugs } from "../lib/api";
+import { getInternalPostsBySlug, getInternalPostSlugs } from "../lib/api";
 import Footer from "@/app/components/Footer";
 
 export default function Post({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
+  const post = getInternalPostsBySlug(params.slug);
   const html = markdownToHtml(post.content, {
     embedOrigin: "https://embed.zenn.studio",
   });
@@ -36,7 +36,7 @@ export default function Post({ params }: { params: { slug: string } }) {
 }
 
 export const generateStaticParams = async () => {
-  const posts = getPostSlugs();
+  const posts = getInternalPostSlugs();
   return posts.map((slug) => ({
     slug: slug,
   }));
