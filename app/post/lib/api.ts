@@ -19,7 +19,7 @@ export function getInternalPostsBySlug(slug: string): InternalPostType {
   return {
     ...data,
     slug: realSlug,
-    url: "/post/" + slug,
+    url: "/post/" + realSlug,
     imageUrl: "",
     content: content,
   } as InternalPostType;
