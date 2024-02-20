@@ -8,9 +8,9 @@ export default function PostPage() {
 
   return (
     <>
-      <div className="px-4 lg:px-8 pb-8">
+      <div className="bg-neutral-900 px-4 lg:px-8 pb-8 pt-16">
         <div className="py-8">
-          <Heading id="post" text="Post" />
+          <Heading text="Post" />
         </div>
         <div className="flex flex-wrap">
           {posts.map((post) => {

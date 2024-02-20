@@ -1,5 +1,5 @@
+import Header from "./components/Header";
 import "./globals.css";
-import { HeadlineContextProvider } from "@/app/context/headline.context";
 
 const siteName = "Yusuke's portfolio";
 const description = "This is Yusuke's portfolio site.";
@@ -40,9 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <HeadlineContextProvider>
-        <body>{children}</body>
-      </HeadlineContextProvider>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

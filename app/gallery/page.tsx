@@ -6,9 +6,9 @@ import Heading from "@/app/components/Heading";
 export default function GalleryPage() {
   return (
     <>
-      <div className="bg-neutral-900 px-4 lg:px-8 pb-8">
+      <div className="bg-neutral-900 px-4 lg:px-8 pb-8 pt-16">
         <div className="py-8">
-          <Heading id="gallery" text="Photo Gallery" />
+          <Heading text="Photo Gallery" />
         </div>
         <Gallery galleries={galleries} />
       </div>

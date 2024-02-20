@@ -9,7 +9,7 @@ export default async function Photos() {
   return (
     <div>
       <div className="mb-16">
-        <Heading id="photos" text="Photos" />
+        <Heading text="Photo" />
       </div>
       <div className="flex flex-wrap flex-col items-center justify-center mx-6">
         <Gallery galleries={homeGalleries} />

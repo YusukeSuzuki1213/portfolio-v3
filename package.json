@@ -24,12 +24,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-grid-gallery": "^1.0.0",
-    "react-intersection-observer": "^9.4.3",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
     "sass": "^1.71.0",
     "tailwindcss": "3.3.1",
-    "zenn-content-css-dark": "^1.0.1",
+    "zenn-content-css-dark": "^1.0.3",
     "zenn-markdown-html": "^0.1.153"
   },
   "devDependencies": {

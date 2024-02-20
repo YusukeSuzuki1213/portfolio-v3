@@ -1,4 +1,4 @@
-import { posts } from "@/app/constants/externalPosts";
+import { posts } from "@/app/constants/externalPost";
 import Card from "@/app/components/Card";
 import Heading from "@/app/components/Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,7 @@ export default function Post() {
   return (
     <div>
       <div className="mb-16">
-        <Heading id="post" text="Post" />
+        <Heading text="Post" />
       </div>
       <div className="flex flex-wrap">
         {posts.map((post) => {

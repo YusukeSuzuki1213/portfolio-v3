@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <div className="mb-16">
-        <Heading id="contact" text="Contact" />
+        <Heading text="Contact" />
       </div>
 
       <div className="mb-16">

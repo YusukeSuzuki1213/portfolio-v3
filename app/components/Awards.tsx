@@ -1,4 +1,4 @@
-import { awards } from "../constants/awards";
+import { awards } from "@/app/constants/award";
 
 export default function Awards() {
   return (

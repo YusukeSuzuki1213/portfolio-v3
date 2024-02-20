@@ -9,7 +9,7 @@ export default function Resume() {
   return (
     <div>
       <div className="mb-16">
-        <Heading id="resume" text="Resume" />
+        <Heading text="Resume" />
       </div>
       <div className="relative -left-5 mb-10">
         <SubHeading text="Education and Experience" />

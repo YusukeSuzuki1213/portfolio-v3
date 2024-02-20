@@ -6,7 +6,7 @@ export default function TechTalk() {
   return (
     <div>
       <div className="mb-16">
-        <Heading id="techTalk" text="Tech Talk" />
+        <Heading text="Tech Talk" />
       </div>
       <div className="flex flex-wrap">
         {techTalks.map((talk) => {

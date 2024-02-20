@@ -1,4 +1,4 @@
-import { certifications } from "../constants/certifications";
+import { certifications } from "@/app/constants/certification";
 
 export default function Certifications() {
   return (

@@ -4,26 +4,18 @@ import Post from "@/app/components/Post";
 import TechTalk from "@/app/components/TechTalk";
 import Contact from "@/app/components/Contact";
 import Photos from "@/app/components/Photos";
-import Navbar from "@/app/components/Navbar";
-import Sidebar from "@/app/components/Sidebar";
 import Footer from "@/app/components/Footer";
 import Works from "@/app/components/Works";
-import { IntersectionObserver } from "@/app/components/IntersectionObserver";
 
 export default function Page() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <Sidebar />
-      <div className="lg:ml-64 bg-neutral-900">
+      <div className="bg-neutral-900">
         <main className="pb-20">
-          <IntersectionObserver id="home" />
           <div className="min-h-screen flex flex-col items-center justify-center">
             <Home />
           </div>
-          <div className="min-h-screen pt-24 flex flex-col items-center space-y-24 ml-12 mr-8 md:ml-40 md:mr-36 lg:ml-44 lg:mr-40">
+          <div className="min-h-screen pt-24 flex flex-col items-center mx-12 md:mx-40 lg:mx-60 xl:mx-96">
             <Resume />
           </div>
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
@@ -38,7 +30,7 @@ export default function Page() {
           <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
             <Photos />
           </div>
-          <div className="pt-24 mx-8 sm:mx-12 md:mx-24 lg:mx-44">
+          <div className="pt-24 mx-12 md:mx-40 lg:mx-60 xl:mx-96">
             <Contact />
           </div>
         </main>

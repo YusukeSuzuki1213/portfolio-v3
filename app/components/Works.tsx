@@ -1,12 +1,12 @@
 import Card from "@/app/components/Card";
 import Heading from "@/app/components/Heading";
-import { works } from "../constants/works";
+import { works } from "@/app/constants/work";
 
 export default function Works() {
   return (
     <div>
       <div className="mb-16">
-        <Heading id="works" text="Works" />
+        <Heading text="Work" />
       </div>
       <div className="flex flex-wrap">
         {works.map((work) => {

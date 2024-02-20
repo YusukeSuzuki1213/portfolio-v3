@@ -10,7 +10,7 @@ export default function Post({ params }: { params: { slug: string } }) {
   });
 
   return (
-    <div className="bg-black">
+    <div className="bg-neutral-900 pt-16">
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col justify-center items-center gap-4 md:gap-8 py-8 md:py-16">
           {post.titleIcon && (
@@ -24,7 +24,7 @@ export default function Post({ params }: { params: { slug: string } }) {
           </p>
         </div>
         <div
-          className="znc-dark p-4 md:p-8"
+          className="znc-dark p-4 md:p-8 mb-16 bg-neutral-900"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
