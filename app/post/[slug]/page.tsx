@@ -10,9 +10,9 @@ export default function Post({ params }: { params: { slug: string } }) {
   });
 
   return (
-    <div>
+    <div className="bg-black">
       <div className="max-w-3xl mx-auto">
-        <div className="flex flex-col justify-center items-center gap-4 md:gap-8 my-8 md:my-16">
+        <div className="flex flex-col justify-center items-center gap-4 md:gap-8 py-8 md:py-16">
           {post.titleIcon && (
             <span className="text-5xl md:text-6xl">{post.titleIcon}</span>
           )}
