@@ -1,5 +1,5 @@
 import { glob } from "glob";
-import { Photo } from "@/app/constants/photos";
+import { Photo } from "@/app/constants/photo";
 
 export type Category =
   | "latest"
