@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header>
       <nav className="relative z-50 hidden sm:block">
-        <div className="fixed w-full flex justify-end bg-black h-16 items-center px-8 drop-shadow-lg">
+        <div className="fixed w-full flex justify-end bg-black h-16 items-center px-8 drop-shadow-xl">
           <div className="flex gap-x-12">
             {navs.map((page, _) => {
               return (

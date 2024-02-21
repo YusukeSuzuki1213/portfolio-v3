@@ -1,0 +1,42 @@
+.toc {
+  position: relative;
+
+  :global(.toc-list) {
+    padding-top: 0.5rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    :global(.toc-list-item) {
+      position: relative;
+      list-style: none;
+      padding-left: 20px;
+      padding-bottom: 0.5rem;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        content: "";
+        background: rgb(161 161 170);
+        border-radius: 50%;
+      }
+    }
+
+    :global(.toc-list-item.is-active-li) {
+      :global(.toc-link) {
+        color: white;
+      }
+      &::before {
+        background: rgb(34 197 94);
+      }
+    }
+  }
+}

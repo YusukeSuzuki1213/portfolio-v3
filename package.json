@@ -28,6 +28,7 @@
     "react-simple-typewriter": "^5.0.1",
     "sass": "^1.71.0",
     "tailwindcss": "3.3.1",
+    "tocbot": "^4.25.0",
     "zenn-content-css-dark": "^1.0.3",
     "zenn-markdown-html": "^0.1.153"
   },
