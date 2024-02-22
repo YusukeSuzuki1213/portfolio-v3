@@ -3,6 +3,7 @@ import markdownToHtml from "zenn-markdown-html";
 import { getInternalPostsBySlug, getInternalPostSlugs } from "../lib/api";
 import Footer from "@/app/components/Footer";
 import { Toc } from "@/app/components/Toc/Toc";
+import UserBio from "@/app/components/UserBio";
 
 export default function Post({ params }: { params: { slug: string } }) {
   const post = getInternalPostsBySlug(params.slug);
@@ -30,8 +31,13 @@ export default function Post({ params }: { params: { slug: string } }) {
             className="lg:basis-3/4 znc-dark p-4 md:p-8 mb-16 bg-neutral-900"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <div className="basis-1/4 bg-black p-8 bg-neutral-900 sticky top-24 hidden lg:block">
-            <Toc selector=".znc-dark" />
+          <div className="hidden lg:flex basis-1/4 flex-col items-center gap-8 bg-black sticky top-20">
+            <div className="w-full p-6 bg-neutral-900">
+              <UserBio imageUrl="/avatar.jpg" />
+            </div>
+            <div className="w-full p-6 bg-neutral-900">
+              <Toc selector=".znc-dark" />
+            </div>
           </div>
         </div>
       </div>
