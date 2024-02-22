@@ -10,7 +10,7 @@ type Props = {
 
 export default function PostCard(props: Props) {
   return (
-    <Link
+    <a
       href={props.url}
       className="max-w-md flex border border-neutral-700 rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
     >
@@ -21,6 +21,6 @@ export default function PostCard(props: Props) {
         <p className="font-bold line-clamp-3">{props.title}</p>
         <div className="text-gray-400 text-sm">{props.date}</div>
       </div>
-    </Link>
+    </a>
   );
 }
