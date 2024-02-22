@@ -16,6 +16,7 @@ export default function PostPage() {
           {posts.map((post) => {
             return (
               <PostCard
+                key={post.title}
                 title={post.title}
                 date={post.publishDate}
                 url={post.url}
