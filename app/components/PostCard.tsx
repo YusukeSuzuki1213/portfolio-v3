@@ -12,7 +12,7 @@ export default function PostCard(props: Props) {
   return (
     <a
       href={props.url}
-      className="max-w-md flex border border-neutral-700 rounded-lg shadow-xl transform transition duration-500 hover:scale-105"
+      className="max-w-md flex border border-neutral-700 rounded-lg shadow-xl"
     >
       <div className="w-36 h-36 flex basis-1/3 justify-center items-center p-8 sm:p-9">
         <Image width={100} height={100} src={props.iconUrl} alt="" />
