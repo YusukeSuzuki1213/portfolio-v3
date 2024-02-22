@@ -4,11 +4,11 @@ type PostType = {
   publishDate: string;
   url: string;
   imageUrl: string;
+  titleIconUrl: string;
 };
 
 export type InternalPostType = PostType & {
   slug: string;
-  titleIcon: string;
   content: string;
 };
 

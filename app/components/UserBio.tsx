@@ -15,7 +15,7 @@ export default function UserBio(props: Props) {
           <Image
             width={60}
             height={60}
-            className="rounded-full bg-white border-2 border-zinc-400"
+            className="rounded-full bg-gradient-to-r from-green-400 to-blue-500 p-0.5"
             src={props.imageUrl}
             alt=""
           />

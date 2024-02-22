@@ -4,6 +4,7 @@ import { getInternalPostsBySlug, getInternalPostSlugs } from "../lib/api";
 import Footer from "@/app/components/Footer";
 import { Toc } from "@/app/components/Toc/Toc";
 import UserBio from "@/app/components/UserBio";
+import Image from "next/image";
 
 export default function Post({ params }: { params: { slug: string } }) {
   const post = getInternalPostsBySlug(params.slug);
@@ -15,9 +16,9 @@ export default function Post({ params }: { params: { slug: string } }) {
     <div className="bg-black pt-16">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col justify-center items-center gap-4 md:gap-8 py-8 md:py-16">
-          {post.titleIcon && (
-            <span className="text-5xl md:text-6xl">{post.titleIcon}</span>
-          )}
+          <div className="h-20 w-20 flex justify-center items-center">
+            <Image width={96} height={96} src={post.titleIconUrl} alt="" />
+          </div>
           <h1 className="text-3xl md:text-4xl tracking-wide font-bold mx-8">
             {post.title}
           </h1>

@@ -10,6 +10,7 @@ export const posts: ExternalPostType[] = [
     url: "https://techblog.zozo.com/entry/android-following-material-design",
     imageUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vasilyjp/20220729/20220729121317.jpg",
+    titleIconUrl: "/logo/android.svg",
   },
   {
     title: "Perfettoを用いたAndroidアプリのボトルネックの特定とその改善",
@@ -19,5 +20,6 @@ export const posts: ExternalPostType[] = [
     url: "https://techblog.zozo.com/entry/android-performance-improvement-with-perfetto",
     imageUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/v/vasilyjp/20210906/20210906154524.jpg",
+    titleIconUrl: "/logo/android.svg",
   },
 ];
