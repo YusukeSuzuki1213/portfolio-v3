@@ -2,7 +2,7 @@ import Footer from "@/app/components/Footer";
 import Heading from "@/app/components/Heading";
 import PostCard from "../components/PostCard";
 import { headers } from "next/headers";
-import { PostType } from "../type/post";
+import { ExternalPostType, InternalPostType, PostType } from "../type/post";
 
 const fetchAllPosts = async () => {
   const host = headers().get("host");
@@ -11,7 +11,7 @@ const fetchAllPosts = async () => {
 };
 
 export default async function PostPage() {
-  const posts: PostType[] = await fetchAllPosts();
+  const posts: (InternalPostType | ExternalPostType)[] = await fetchAllPosts();
   return (
     <>
       <div className="bg-neutral-900 px-4 lg:px-8 pb-8 pt-16 flex flex-col items-center">
@@ -27,6 +27,7 @@ export default async function PostPage() {
                 date={post.publishDate}
                 url={post.url}
                 iconUrl={post.titleIconUrl}
+                shouldOpenNewWindow={!("slug" in post)}
               />
             );
           })}
