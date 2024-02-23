@@ -39,7 +39,7 @@ export default async function og({ params: { slug } }: Props) {
           alignItems: "center",
           justifyContent: "center",
           backgroundImage: "linear-gradient(to right, #22c55e, #06b6d4)",
-          padding: "2rem",
+          padding: "2.5rem",
         }}
       >
         <div
@@ -81,10 +81,10 @@ export default async function og({ params: { slug } }: Props) {
                   gap: "1rem",
                 }}
               >
-                <div style={{ fontSize: "2.25rem", fontWeight: "bold" }}>
+                <div style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
                   Yusuke Suzuki
                 </div>
-                <div style={{ fontSize: "1.5rem", color: "rgb(55 65 81)" }}>
+                <div style={{ fontSize: "1.75rem", color: "rgb(55 65 81)" }}>
                   {post.publishDate}
                 </div>
               </div>
