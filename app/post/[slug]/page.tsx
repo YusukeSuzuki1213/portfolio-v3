@@ -1,13 +1,20 @@
 import "zenn-content-css-dark";
 import markdownToHtml from "zenn-markdown-html";
-import { getInternalPostsBySlug, getInternalPostSlugs } from "../lib/api";
+import { getInternalPostSlugs } from "../../lib/post";
 import Footer from "@/app/components/Footer";
 import { Toc } from "@/app/components/Toc/Toc";
+import { headers } from "next/headers";
 import UserBio from "@/app/components/UserBio";
 import Image from "next/image";
 
-export default function Post({ params }: { params: { slug: string } }) {
-  const post = getInternalPostsBySlug(params.slug);
+const fetchInternalPostsBySlug = async (slug: string) => {
+  const host = headers().get("host");
+  const res = await fetch(`http://${host}/api/post?slug=${slug}`);
+  return res.json();
+};
+
+export default async function Post({ params }: { params: { slug: string } }) {
+  const post = await fetchInternalPostsBySlug(params.slug);
   const html = markdownToHtml(post.content, {
     embedOrigin: "https://embed.zenn.studio",
   });

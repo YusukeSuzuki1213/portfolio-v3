@@ -1,4 +1,4 @@
-type PostType = {
+export type PostType = {
   title: string;
   description: string;
   publishDate: string;

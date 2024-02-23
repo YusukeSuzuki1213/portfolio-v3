@@ -1,7 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-import { InternalPostType, ExternalPostType } from "../../type/post";
+import { InternalPostType, ExternalPostType } from "../type/post";
 import { posts as externalPosts } from "@/app/constants/externalPost";
 
 const postsDirectory = join(process.cwd(), "app/post/_posts");

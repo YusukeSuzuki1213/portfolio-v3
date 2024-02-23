@@ -1,11 +1,17 @@
 import Footer from "@/app/components/Footer";
 import Heading from "@/app/components/Heading";
-import { getAllPosts } from "./lib/api";
 import PostCard from "../components/PostCard";
+import { headers } from "next/headers";
+import { PostType } from "../type/post";
 
-export default function PostPage() {
-  const posts = getAllPosts();
+const fetchAllPosts = async () => {
+  const host = headers().get("host");
+  const res = await fetch(`http://${host}/api/allPosts`);
+  return res.json();
+};
 
+export default async function PostPage() {
+  const posts: PostType[] = await fetchAllPosts();
   return (
     <>
       <div className="bg-neutral-900 px-4 lg:px-8 pb-8 pt-16 flex flex-col items-center">
