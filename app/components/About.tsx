@@ -7,7 +7,7 @@ export default function About() {
       <Heading text="About" />
       {about.map((value) => {
         return (
-          <p key={value} className="mt-4 leading-relaxed tracking-wider">
+          <p key={value} className="mt-4 leading-relaxed tracking-wide">
             {value}
           </p>
         );
