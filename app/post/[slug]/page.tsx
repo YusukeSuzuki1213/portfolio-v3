@@ -12,6 +12,8 @@ const fetchInternalPostsBySlug = async (slug: string) => {
   return res.json();
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function Post({ params }: { params: { slug: string } }) {
   const post = await fetchInternalPostsBySlug(params.slug);
   const html = markdownToHtml(post.content, {

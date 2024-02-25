@@ -72,7 +72,6 @@ import "zenn-content-css-dark";
 
 ```tsx
 <div class="znc-dark">
-  <!-- ... -->
 </div>
 ```
 
