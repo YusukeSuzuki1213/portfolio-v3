@@ -3,18 +3,15 @@ import Gallery from "@/app/components/Gallery";
 import { galleries } from "@/app/constants/gallery";
 import Heading from "@/app/components/Heading";
 
-export default function GalleryPage() {
+export default function Page() {
   return (
-    <>
-      <div className="bg-neutral-900 px-4 lg:px-8 pb-8 pt-16">
-        <div className="py-8">
-          <Heading text="Photo Gallery" />
+    <div className="min-h-screen w-full flex flex-col items-center bg-neutral-900">
+      <div className="px-4 pb-8 pt-16 flex flex-col items-center">
+        <div className="py-16">
+          <Heading text="Gallery" />
         </div>
         <Gallery galleries={galleries} />
       </div>
-      <footer className="bg-black">
-        <Footer />
-      </footer>
-    </>
+    </div>
   );
 }

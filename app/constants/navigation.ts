@@ -1,9 +1,6 @@
-export type Navigation = {
-  readonly path: string;
-  readonly displayText: string;
-};
+import { NavigationType } from "../type/navigation";
 
-export const navs: Navigation[] = [
+export const navs: NavigationType[] = [
   {
     path: "/",
     displayText: "About me",

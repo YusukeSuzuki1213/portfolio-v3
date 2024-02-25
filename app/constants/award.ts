@@ -1,7 +1,4 @@
-type AwardType = {
-  title: string;
-  url?: string;
-};
+import { AwardType } from "../type/award";
 
 export const awards: AwardType[] = [
   {

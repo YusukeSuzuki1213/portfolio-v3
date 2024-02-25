@@ -1,12 +1,6 @@
-type WorksType = {
-  title: string;
-  subtitle: string;
-  date: string;
-  url: string;
-  imageUrl: string;
-};
+import { WorkType } from "../type/work";
 
-export const works: WorksType[] = [
+export const works: WorkType[] = [
   {
     title: "Japan MMA ニュース",
     subtitle:

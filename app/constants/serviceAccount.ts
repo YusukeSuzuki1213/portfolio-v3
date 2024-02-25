@@ -1,16 +1,10 @@
 import { faXTwitter, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faQ, faZ } from "@fortawesome/free-solid-svg-icons";
-
-type ServiceAccount = {
-  url: string;
-  icon: Icon;
-};
-
-type Icon = "github" | "twitter" | "qiita" | "zenn";
+import { IconType, ServiceAccountType } from "../type/ServiceAccount";
 
 export const MY_TWITTER_URL = "https://twitter.com/s1u2z1u3ki";
 
-export const serviceAccounts: ServiceAccount[] = [
+export const serviceAccounts: ServiceAccountType[] = [
   {
     url: MY_TWITTER_URL,
     icon: "twitter",
@@ -25,11 +19,11 @@ export const serviceAccounts: ServiceAccount[] = [
   },
   {
     url: "https://zenn.dev/yusuke_zukki?tab=scraps",
-    icon: "zenn"
-  }
+    icon: "zenn",
+  },
 ];
 
-export const toAwesomeIcon = (icon: Icon) => {
+export const toAwesomeIcon = (icon: IconType) => {
   switch (icon) {
     case "github":
       return faGithub;

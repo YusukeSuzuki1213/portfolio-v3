@@ -5,10 +5,10 @@ import Image from "next/image";
 import { serviceAccounts, toAwesomeIcon } from "../constants/serviceAccount";
 import { Typewriter } from "react-simple-typewriter";
 
-export default function Home() {
+export default function Profile() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
-      <div className="w-56 h-56 lg:w-64 lg:h-64 animate-distorted-circle overflow-hidden rounded-distorted-circle bg-neutral-800">
+      <div className="w-44 h-44 lg:w-52 lg:h-52 animate-distorted-circle overflow-hidden rounded-distorted-circle bg-neutral-800">
         <Image
           src="/avatar.jpg"
           alt="アバターアイコン"
@@ -17,7 +17,7 @@ export default function Home() {
         />
       </div>
       <div className="flex flex-col items-center space-y-6 mt-6 lg:items-start lg:space-y-10 lg:space-x-0 lg:mt-0">
-        <div className="text-4xl lg:text-6xl text-white">
+        <div className="text-3xl lg:text-5xl text-white">
           <Typewriter
             words={["Yusike", "Yusuke Suzuki"]}
             loop={1}

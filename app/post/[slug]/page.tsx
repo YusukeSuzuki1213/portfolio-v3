@@ -1,7 +1,6 @@
 import "zenn-content-css-dark";
 import markdownToHtml from "zenn-markdown-html";
 import { getInternalPostSlugs } from "../../lib/post";
-import Footer from "@/app/components/Footer";
 import { Toc } from "@/app/components/Toc/Toc";
 import { headers } from "next/headers";
 import UserBio from "@/app/components/UserBio";
@@ -49,9 +48,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
-      <footer className="bg-black">
-        <Footer />
-      </footer>
     </div>
   );
 }

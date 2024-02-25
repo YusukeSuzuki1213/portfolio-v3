@@ -1,6 +1,4 @@
-type CertificationType = {
-  title: string;
-};
+import { CertificationType } from "../type/certification";
 
 export const certifications: CertificationType[] = [
   {

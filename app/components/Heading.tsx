@@ -4,11 +4,10 @@ type Props = {
 
 export default function Heading(props: Props) {
   return (
-    <div className="flex-col items-center">
-      <h2 className="text-4xl font-bold text-white text-center">
+    <div className="inline-block">
+      <h1 className="text-2xl font-bold text-gray-200 text-center border-b-4 border-green-500">
         {props.text}
-      </h2>
-      <hr className="w-24 h-0.5 mx-auto mt-4 bg-green-500 border-0" />
+      </h1>
     </div>
   );
 }

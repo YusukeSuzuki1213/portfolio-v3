@@ -1,16 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { Category, Gallery } from "@/app/constants/gallery";
 import Image from "next/image";
+import { CategoryType, GalleryType } from "../type/gallery";
 
 type Props = {
-  galleries: Gallery[];
+  galleries: GalleryType[];
 };
 
 export default function Gallery(props: Props) {
-  const [category, setCategory] = useState<Category>("latest");
-  const buttonStyle = (targetCategory: Category) => {
+  const [category, setCategory] = useState<CategoryType>("latest");
+  const buttonStyle = (targetCategory: CategoryType) => {
     const baseStyle =
       "text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 border border-green-500 hover:text-white hover:bg-green-500 rounded-full text-center";
     return targetCategory == category
@@ -20,7 +20,7 @@ export default function Gallery(props: Props) {
 
   return (
     <>
-      <div className="flex flex-wrap justify-items-start mb-4 md:mb-6 gap-2">
+      <div className="flex flex-wrap justify-items-start mb-2 md:mb-4 gap-2">
         {props.galleries.map((gallery) => {
           return (
             <button

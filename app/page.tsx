@@ -1,43 +1,43 @@
-import Home from "@/app/components//Home";
-import Resume from "@/app/components/Resume";
-import Post from "@/app/components/Post";
-import TechTalk from "@/app/components/TechTalk";
+import Profile from "@/app/components/Profile";
 import Contact from "@/app/components/Contact";
-import Photos from "@/app/components/Photos";
-import Footer from "@/app/components/Footer";
-import Works from "@/app/components/Works";
+import Awards from "./components/Awards";
+import Certifications from "./components/Certifications";
+import Skills from "./components/Skills";
+import About from "./components/About";
+import Education from "./components/Education";
+import WorkExperiences from "./components/WorkExperiences";
 
 export default function Page() {
   return (
     <>
-      <div className="bg-neutral-900">
-        <main className="pb-20">
-          <div className="min-h-screen flex flex-col items-center justify-center">
-            <Home />
+      <div className="flex flex-col items-center bg-neutral-900 text-gray-200">
+        <main className="max-w-3xl mt-20 mx-4 md:mx-12">
+          <div className="my-16">
+            <Profile />
           </div>
-          <div className="min-h-screen pt-24 flex flex-col items-center mx-12 md:mx-40 lg:mx-60 xl:mx-96">
-            <Resume />
+          <div className="mb-16">
+            <About />
           </div>
-          <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
-            <Post />
+          <div className="mb-16">
+            <Education />
           </div>
-          <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
-            <TechTalk />
+          <div className="mb-16">
+            <WorkExperiences />
           </div>
-          <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
-            <Works />
+          <div className="mb-16">
+            <Skills />
           </div>
-          <div className="min-h-screen pt-24 md:mx-24 lg:mx-28">
-            <Photos />
+          <div className="mb-16">
+            <Awards />
           </div>
-          <div className="pt-24 mx-12 md:mx-40 lg:mx-60 xl:mx-96">
+          <div className="mb-16">
+            <Certifications />
+          </div>
+          <div className="mb-16">
             <Contact />
           </div>
         </main>
       </div>
-      <footer className="lg:ml-64 bg-black">
-        <Footer />
-      </footer>
     </>
   );
 }

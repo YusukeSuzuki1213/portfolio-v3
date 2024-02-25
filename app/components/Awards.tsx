@@ -1,9 +1,11 @@
 import { awards } from "@/app/constants/award";
+import Heading from "./Heading";
 
 export default function Awards() {
   return (
     <div>
-      <ul className="list-disc leading-loose text-base">
+      <Heading text="Awards" />
+      <ul className="mt-4 ml-4 list-disc leading-loose text-base">
         {awards.map((award) => (
           <li key={award.title}>
             {award.url ? (
