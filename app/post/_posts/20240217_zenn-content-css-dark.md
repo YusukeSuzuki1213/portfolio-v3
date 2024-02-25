@@ -72,7 +72,7 @@ import "zenn-content-css-dark";
 
 ```tsx
 <div class="znc-dark">
-  <!-- html parsed from markdown comes here. -->
+  <!-- ... -->
 </div>
 ```
 
