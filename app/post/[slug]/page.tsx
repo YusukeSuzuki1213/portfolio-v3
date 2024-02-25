@@ -40,7 +40,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
           />
           <div className="hidden lg:flex basis-1/4 flex-col items-center gap-8 bg-black sticky top-20">
             <div className="w-full p-6 bg-neutral-900">
-              <UserBio imageUrl="/avatar.jpg" />
+              <UserBio imageUrl="/avatar-3.jpg" />
             </div>
             <div className="w-full p-6 bg-neutral-900">
               <Toc selector=".znc-dark" />

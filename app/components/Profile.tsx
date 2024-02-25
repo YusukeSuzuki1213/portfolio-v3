@@ -10,7 +10,7 @@ export default function Profile() {
     <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-20">
       <div className="w-44 h-44 lg:w-52 lg:h-52 animate-distorted-circle overflow-hidden rounded-distorted-circle bg-neutral-800">
         <Image
-          src="/avatar.jpg"
+          src="/avatar-3.jpg"
           alt="アバターアイコン"
           width={500}
           height={500}

@@ -71,7 +71,7 @@ export default async function og({ params: { slug } }: Props) {
                   width: "8rem",
                   borderRadius: "9999px",
                 }}
-                src={`http://${host}/avatar.jpg`}
+                src={`http://${host}/avatar-3.jpg`}
                 alt="アバターアイコン"
               />
               <div
