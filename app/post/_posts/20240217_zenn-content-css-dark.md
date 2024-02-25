@@ -26,9 +26,9 @@ https://github.com/zenn-dev/zenn-editor
 
 https://github.com/zenn-dev/zenn-community/issues/267#issuecomment-1668958615
 
-したがって、テーブルやメッセージのカラーをダークカラーの背景で使用すると違和感がありました。
+したがって、以下のようにテーブルなどのカラーをダークカラーの背景で使用すると違和感がありました。
 
-![ダークカラーの背景で zenn-content-css を使用した際の表示例](http://yusuke-suzuki.net/post/20240217_zenn-content-css-dark/1.png =300x)
+![表示例](/post/20240217_zenn-content-css-dark/1.png =300x)
 _ダークカラーの背景で zenn-content-css を使用した際の表示例_
 
 `zenn-content-css`の違和感のある CSS クラスのみ上書きすることもできそうでしたが、どうせならパッケージとして公開することにしました。
@@ -68,7 +68,7 @@ $link-text-color: $blue-400;
 import "zenn-content-css-dark";
 ```
 
-スタイルを適用したい要素に class=znc を指定します。
+スタイルを適用したい要素に `class="znc-dark"` を指定します。
 
 ```tsx
 <div class="znc-dark">
@@ -81,8 +81,6 @@ import "zenn-content-css-dark";
 以下は`zenn-content-css-dark`のデモになります。
 
 (このブログは`zenn-content-css-dark`を使用して記事を書いています。)
-
-# 大見出し
 
 ## 中見出し
 
@@ -138,48 +136,48 @@ _キャプション_
 | Text | Text | Text |
 | Text | Text | Text |
 
-# 埋め込み
+## 埋め込み
 
-## Zenn
+### Zenn
 
 https://zenn.dev/zenn/articles/markdown-guide#%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E3%81%AE%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF
 
-## X
+### X
 
 https://twitter.com/jack/status/20
 
 https://x.com/jack/status/20
 
-## YouTube
+### YouTube
 
 https://www.youtube.com/watch?v=WRVsOCh907o
 
-## GitHub
+### GitHub
 
 https://github.com/octocat/Hello-World/blob/master/README
 
 https://github.com/octocat/Spoon-Knife/blob/main/README.md#L1-L3
 
-# コールアウト
+## コールアウト
 
-## Warning
+### Warning
 
 :::message
 これはコールアウトの例です。
 :::
 
-## Alert
+### Alert
 
 :::message alert
 これは警告のコールアウトです。
 :::
 
-## アコーディオン
+### アコーディオン
 
 :::details アコーディオン
 表示したい内容
 :::
 
-# フッターノート[^1]
+## フッターノート[^1]
 
 [^1]: フッターノートの内容
