@@ -10,6 +10,7 @@ export const size = {
 };
 export const contentType = "image/png";
 export const alt = "ogp image";
+export const revalidate = 0;
 
 type Props = {
   params: { slug: string };
