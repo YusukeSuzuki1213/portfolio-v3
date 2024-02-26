@@ -5,15 +5,15 @@ import { Toc } from "@/app/components/Toc/Toc";
 import { headers } from "next/headers";
 import UserBio from "@/app/components/UserBio";
 import Image from "next/image";
+import { InternalPostType, PostType } from "@/app/type/post";
+import { siteName, siteTwitterAccount } from "@/app/constants/metadata";
 
-const fetchInternalPostsBySlug = async (slug: string) => {
-  const host = headers().get("host");
-  const res = await fetch(`http://${host}/api/post?slug=${slug}`);
-  return res.json();
+type Props = {
+  params: { slug: string };
 };
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const post = await fetchInternalPostsBySlug(params.slug);
+export default async function Post({ params }: Props) {
+  const post: InternalPostType = await fetchInternalPostsBySlug(params.slug);
   const html = markdownToHtml(post.content, {
     embedOrigin: "https://embed.zenn.studio",
   });
@@ -52,9 +52,39 @@ export default async function Post({ params }: { params: { slug: string } }) {
   );
 }
 
+export const generateMetadata = async ({ params }: Props) => {
+  const post: InternalPostType = await fetchInternalPostsBySlug(params.slug);
+
+  return {
+    title: post.title,
+    description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: post.url,
+      siteName: siteName,
+      locale: "ja_JP",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      site: siteTwitterAccount,
+      creator: siteTwitterAccount,
+    },
+  };
+};
+
 export const generateStaticParams = async () => {
   const posts = getInternalPostSlugs();
   return posts.map((slug) => ({
     slug: slug,
   }));
+};
+
+const fetchInternalPostsBySlug = async (slug: string) => {
+  const host = headers().get("host");
+  const res = await fetch(`http://${host}/api/post?slug=${slug}`);
+  return res.json();
 };

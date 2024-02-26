@@ -1,11 +1,12 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import {
+  siteName,
+  siteDescription,
+  siteUrl,
+  siteTwitterAccount,
+} from "./constants/metadata";
 import "./globals.css";
-
-const siteName = "Yusuke's portfolio";
-const description = "This is Yusuke's portfolio site.";
-const url = "https://yusuke-suzuki.site/";
-const twitterAccount = "@s1u2z1u3ki";
 
 export const metadata = {
   title: {
@@ -13,24 +14,21 @@ export const metadata = {
     /** `next-seo`の`titleTemplate`に相当する機能 */
     template: `%s - ${siteName}`,
   },
-  description,
+  siteDescription,
   openGraph: {
     title: siteName,
-    description,
-    url,
-    siteName,
+    siteDescription,
+    url: siteUrl,
+    siteName: siteName,
     locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: siteName,
-    description,
-    site: twitterAccount,
-    creator: twitterAccount,
-  },
-  alternates: {
-    canonical: url,
+    description: siteDescription,
+    site: siteTwitterAccount,
+    creator: siteTwitterAccount,
   },
 };
 

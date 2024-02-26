@@ -1,8 +1,8 @@
 ---
-title: npmパッケージ『zenn-content-css-dark』を公開しました。
+title: npmパッケージ『zenn-content-css-dark』を公開しました
+description: zenn-content-cssのダークテーマ用のパッケージを公開した経緯と使用方法をまとめています。
 titleIconUrl: /logo/scss.svg
 publishDate: 2024/02/25
-description: zenn-content-css-darkのデモページです。
 ---
 
 # **`zenn-content-css-dark` とは**
