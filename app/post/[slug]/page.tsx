@@ -35,7 +35,7 @@ export default async function Post({ params }: Props) {
 
         <div className="flex flex-row items-start gap-8 sm:mx-10">
           <div
-            className="lg:basis-3/4 znc-dark p-4 md:p-8 mb-16 bg-neutral-900"
+            className="lg:basis-3/4 znc-dark p-4 md:p-8 mb-16 bg-neutral-900 overflow-scroll"
             dangerouslySetInnerHTML={{ __html: html }}
           />
           <div className="hidden lg:flex basis-1/4 flex-col items-center gap-8 bg-black sticky top-20">
