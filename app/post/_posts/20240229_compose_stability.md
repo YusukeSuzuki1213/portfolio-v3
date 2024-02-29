@@ -2,7 +2,7 @@
 title: Jetpack ComposeのStabilityについてわかりやすく解説
 description: Jetpack ComposeのStability(stableとunstable)についてわかりやすく解説しています。
 titleIconUrl: /logo/android.svg
-publishDate: 2024/02/25
+publishDate: 2024/02/29
 ---
 
 # **はじめに**
