@@ -1,5 +1,5 @@
 ---
-title: Jetpack ComposeのStabilityについてわかりやすく解説
+title: Jetpack ComposeのStabilityについてわかりやすく解説する
 description: Jetpack ComposeのStability(stableとunstable)についてわかりやすく解説しています。
 titleIconUrl: /logo/android.svg
 publishDate: 2024/02/29
@@ -9,6 +9,13 @@ publishDate: 2024/02/29
 ComposeのStabilityはComposableのRecomposeによるパフォーマンス低下を改善するための重要な概念の一つです。
 
 しかしながら少し複雑で理解しにくい部分があるため本記事でStabilityについてわかりやすく解説します。
+
+:::message
+[Strong Skipping Mode](https://medium.com/androiddevelopers/jetpack-compose-strong-skipping-mode-explained-cbdb2aa4b900)の登場で意識する機会は減る可能性は高そうです。
+
+Strong Skipping Modeは以下の記事で詳しく解説しているので、ぜひ参考にしてください。
+https://yusuke-suzuki.site/post/20240301_compose_strong_skipping_mode
+:::
 
 
 # **Stabilityとは**
