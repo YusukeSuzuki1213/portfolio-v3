@@ -1,6 +1,6 @@
 ---
 title: Jetpack Composeの「Strong Skipping Mode」についてわかりやすく解説する
-description: 
+description: Jetpack Composeの「Strong Skipping Mode」についてわかりやすく解説しています。
 titleIconUrl: /logo/android.svg
 publishDate: 2024/03/01
 ---
