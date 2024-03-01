@@ -61,15 +61,22 @@ _Recompositionが発生してCompositionツリーが更新されている様子_
 ## **1. Composable関数のパラメータに変更がない**
 これは全てのパラメータを`Object.equals()`で比較することで判断をします。
 
-例えば、`initialUiState`の`text`と`updatedUiState`の`text`はメモリの参照先は違いますが同じ文字列を持っているので、`Object.equals()`は`true`となります。
+例えば、`initialUiState`と`updatedUiState`はメモリの参照先は違いますが同じ`text`の文字列`hoge`を持っているので、`Object.equals()`は`true`となります。
+
 ```kt
+data class UiState(
+  val text: String
+)
+
 val initialUiState = UiState(
-  val text = "hoge"
+  text = "hoge"
 )
 val updatedUiState = UiState(
-  val text = "hoge"
+  text = "hoge"
 )
-initialUiState.text.equals(updatedUiState.text) // => true
+
+initialUiState.equals(updatedUiState) // => true
+initialUiState === updatedUiState     // => false
 ```
 
 ## **2. Composable関数のパラメータが`stable`である**

@@ -36,7 +36,7 @@ Composeにおいてパフォーマンスの問題が発生したときに、下�
 - [Stability configuration file](https://developer.android.com/jetpack/compose/performance/stability/fix#configuration-file)を使用してコンパイル時にStableなクラスを提供する
 
 
-**Strong Skipping Modeを使用するとunstableなパラメータでもRecompositionをスキップできるようになります。**(つまりrestatableなComposable関数はスキップ可能になる)
+**Strong Skipping Modeを使用するとunstableなパラメータでもRecompositionをスキップできるようになります。**
 
 [記事中](https://medium.com/androiddevelopers/jetpack-compose-strong-skipping-mode-explained-cbdb2aa4b900)のコードを引用して具体例で説明します。
 
