@@ -17,7 +17,7 @@ https://medium.com/androiddevelopers/jetpack-compose-strong-skipping-mode-explai
 下記を可能にする機能のことです。
 
 1. **unstableなパラメータをスキップ可能にする**
-2. **unstableなキャプチャ[^1]を持つラムダもメモ化する**
+2. **unstableなキャプチャ[^1]を持つラムダをメモ化する**
 
 
 順番に解説していきます。
@@ -65,12 +65,12 @@ Strong Skipping Modeが無効であれば`FavoriteButton`の`onToggle`が実行�
 Strong Skipping Modeを有効にすると、`articles`が変更されていないので`ArticleList`のRecompositionをスキップすることができます。
 
 ### **unstableパラメータの変更有無の判断方法**
-stableなパラメータは`Object.equals()`(`==`)でパラメータに変更の有無を判断していますが、unstableなパラメータはどのようにパラメータの変更有無の判断をしているのでしょうか？
+stableなパラメータは`Object.equals()`(`==`)でパラメータの変更の有無を判断していますが、unstableなパラメータはどのようにパラメータの変更有無の判断をしているのでしょうか？
 
 **unstableなパラメータは`===`によって変更の有無を判断する**ようです。つまりインスタンスのメモリの参照先のアドレスを比較して、同じインスタンスであるか比較します。
 
 
-## 2. **unstableなキャプチャを持つラムダもメモ化する**
+## 2. **unstableなキャプチャを持つラムダをメモ化する**
 今まで(=Strong Skipping Modeが無効の場合)、Composable関数のラムダ内でunstableな変数を参照していると(=キャプチャ)、Recompositionをスキップすることができませんでした。
 
 例えば以下のComposable関数があったとき、`viewModel`がunstableであればRecompositionのたびにラムダが再生成され、`NumberComposable`もRecompositionをスキップできませんでした。
@@ -122,6 +122,6 @@ Composeのパフォーマンスを考慮しだすと、Composeの深い理解や
 Recompositionして欲しいのにされないという問題が発生する可能性もはらんでいるので、慎重に進めるというのも納得しました。
 
 
-以上です。参考になればぜひシェアをお願いします！
+以上です！参考になればぜひシェアをお願いします！
 
 [^1]: ラムダ外の変数を参照することです。
