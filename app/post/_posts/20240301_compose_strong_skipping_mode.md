@@ -8,7 +8,7 @@ publishDate: 2024/03/01
 # **はじめに**
 Jetpack Composeの`Strong Skipping Mode`は開発者にとって嬉しい機能である一方、Composeの深い知識が必要なため理解が難しいと思います。
 
-以下の記事で詳細に説明されていますが、英語で書かれていたり前提知識が必要な箇所もあるため、本記事でわかりやすく解説します。
+以下の記事で詳細に説明されていますが、前提知識が必要な箇所もあるため、本記事でわかりやすく解説します。
 
 https://medium.com/androiddevelopers/jetpack-compose-strong-skipping-mode-explained-cbdb2aa4b900
 
