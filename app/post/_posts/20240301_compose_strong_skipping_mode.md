@@ -70,7 +70,7 @@ stableなパラメータは`Object.equals()`(`==`)でパラメータの変更の
 **unstableなパラメータは`===`によって変更の有無を判断する**ようです。つまりインスタンスのメモリの参照先のアドレスを比較して、同じインスタンスであるか比較します。
 
 
-## 2. **unstableなキャプチャを持つラムダをメモ化する**
+## **2. unstableなキャプチャを持つラムダをメモ化する**
 今まで(=Strong Skipping Modeが無効の場合)、Composable関数のラムダ内でunstableな変数を参照していると(=キャプチャ)、Recompositionをスキップすることができませんでした。
 
 例えば以下のComposable関数があったとき、`viewModel`がunstableであればRecompositionのたびにラムダが再生成され、`NumberComposable`もRecompositionをスキップできませんでした。
