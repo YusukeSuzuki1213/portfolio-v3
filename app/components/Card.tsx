@@ -20,7 +20,7 @@ export default function Card(props: Props) {
         <Image width={100} height={100} src={props.iconUrl} alt="" />
       </div>
       <div className="flex basis-2/3 flex-col gap-4 justify-between p-4">
-        <p className="font-bold line-clamp-3">{props.title}</p>
+        <p className="font-bold line-clamp-3 break-all">{props.title}</p>
         <div className="flex justify-between items-center">
           <div className="text-gray-400 text-sm">{props.date}</div>
           {props.shouldOpenNewWindow && (

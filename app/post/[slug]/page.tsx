@@ -25,7 +25,7 @@ export default async function Post({ params }: Props) {
           <div className="h-20 w-20 flex justify-center items-center">
             <Image width={96} height={96} src={post.titleIconUrl} alt="" />
           </div>
-          <h1 className="text-3xl md:text-4xl tracking-wide font-bold mx-4 sm:mx-14 md:mx-16">
+          <h1 className="text-3xl md:text-4xl tracking-wide font-bold mx-4 break-all sm:mx-14 md:mx-16">
             {post.title}
           </h1>
           <p className="text-sm tracking-wider text-gray-400">
