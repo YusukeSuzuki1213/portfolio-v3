@@ -1,6 +1,6 @@
 ---
 title: 生成AIによるエンジニア不要論について考えてみる
-description: ChatGPTをはじめとする生成AIの登場でソフトウェアエンジニアの今後がどうなるか考察してみる
+description: ChatGPTをはじめとする生成AIの登場でソフトウェアエンジニアの今後がどうなるか考えてみる
 titleIconUrl: /logo/ballon.png
 publishDate: 2023/12/18
 ---
