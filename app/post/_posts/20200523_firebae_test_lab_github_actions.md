@@ -1,5 +1,5 @@
 ---
-title: 【Android開発】Github Actionsを用いてFirebase Test Lab上で実機テストをする方法
+title: 【Android】Github Actionsを用いてFirebase Test Lab上で実機テストをする方法
 description: 本記事ではGithub Actionsを使用して、Firebase Test Labで実機テストを行う方法を紹介します。
 titleIconUrl: /logo/android.svg
 publishDate: 2020/05/23

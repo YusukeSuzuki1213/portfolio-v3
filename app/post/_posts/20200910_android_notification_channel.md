@@ -1,5 +1,5 @@
 ---
-title: 【Android開発】Notification Channelごとに通知をグループ化する方法
+title: 【Android】Notification Channelごとに通知をグループ化する方法
 description: 'Androidのプッシュ通知をチャンネルごとにグループ化する方法を紹介します。'
 titleIconUrl: /logo/android.svg
 publishDate: 2020/09/10
