@@ -23,6 +23,7 @@ export default function Awards() {
           </li>
         ))}
       </ul>
+      
     </div>
   );
 }
