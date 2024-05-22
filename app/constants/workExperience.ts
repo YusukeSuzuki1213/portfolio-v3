@@ -2,6 +2,17 @@ import { WorkExperienceType } from "../type/workExperience";
 
 export const workExperiences: WorkExperienceType[] = [
   {
+    name: "TechTrain(エンジニア向け教育サービス)のメンター業務",
+    period: "2024/05〜",
+    employmentType: "業務委託",
+    teamSize: "-",
+    task: "実装相談 / キャリア相談 / 面接対策 / など",
+    technology: "-",
+    technicalOutputs: [],
+    comment:
+      "ユーザからのキャリア相談や実装相談など幅広いメンター業務を担当しています。<br> 面談のご予約は<a class='underline text-green-500' href = 'https://techtrain.dev/mentors/265'>こちら</a>から。",
+  },
+  {
     name: "コスメ・美容系サービスのAndroidアプリ開発",
     period: "2023/09〜",
     employmentType: "業務委託",

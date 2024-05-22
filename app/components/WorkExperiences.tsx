@@ -79,7 +79,9 @@ export default function WorkExperiences() {
                     コメント
                   </td>
                   <td className="border-gray-500 border-b px-2 py-2">
-                    {experience.comment}
+                    <div
+                      dangerouslySetInnerHTML={{ __html: experience.comment }}
+                    />
                   </td>
                 </tr>
               </tbody>
