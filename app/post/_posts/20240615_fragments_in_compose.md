@@ -2,7 +2,7 @@
 title: 'Fragments in Composeを実現する方法'
 description: 'AndroidFragmentを使用してFragments in ComposeでUIを組む方法を解説します。'
 titleIconUrl: /logo/android.svg
-publishDate: 2024/06/14
+publishDate: 2024/06/15
 ---
 
 # **はじめに**
