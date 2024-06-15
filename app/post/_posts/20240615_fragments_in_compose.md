@@ -206,5 +206,5 @@ https://developer.android.com/reference/kotlin/androidx/fragment/compose/package
 
 https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:fragment/fragment-compose/src/main/java/androidx/fragment/compose/AndroidFragment.kt
 
-[^1]: https://developer.android.com/jetpack/androidx/releases/fragment#version_18_2
+[^1]: [androidx.fragment version 1.8のリリースノート](https://developer.android.com/jetpack/androidx/releases/fragment#version_18_2)
 
