@@ -10,7 +10,7 @@ export const workExperiences: WorkExperienceType[] = [
     technology: "-",
     technicalOutputs: [],
     comment:
-      "ユーザからのキャリア相談や実装相談など幅広いメンター業務を担当しています。<br> 面談のご予約は<a class='underline text-green-500' href = 'https://techtrain.dev/mentors/265'>こちら</a>から。",
+      "ユーザからのキャリア相談や実装相談などのメンター業務を担当しています。面談のご予約は<a class='underline text-green-500' href = 'https://techtrain.dev/mentors/265'>こちら</a>から。",
   },
   {
     name: "コスメ・美容系サービスのAndroidアプリ開発",
