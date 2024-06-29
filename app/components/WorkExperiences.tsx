@@ -51,29 +51,6 @@ export default function WorkExperiences() {
                     {experience.technology}
                   </td>
                 </tr>
-                {experience.technicalOutputs.length > 0 && (
-                  <tr>
-                    <td className="border-gray-500 border-b pr-2 py-2  whitespace-nowrap">
-                      登壇 / 技術記事
-                    </td>
-                    <td className="border-gray-500 border-b pr-2 pl-6 py-2">
-                      <ul className="list-disc leading-loose">
-                        {experience.technicalOutputs.map((outPut) => {
-                          return (
-                            <li key={outPut.title}>
-                              <a
-                                className="underline text-green-500"
-                                href={outPut.url}
-                              >
-                                {outPut.title}
-                              </a>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </td>
-                  </tr>
-                )}
                 <tr>
                   <td className="border-gray-500 border-b pr-2 py-2 whitespace-nowrap">
                     コメント

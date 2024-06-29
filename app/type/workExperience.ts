@@ -5,15 +5,5 @@ export type WorkExperienceType = {
   teamSize: string;
   task: string;
   technology: string;
-  technicalOutputs: (Talk | Article)[];
   comment: string;
-};
-
-export type Talk = {
-  title: string;
-  url: string;
-};
-export type Article = {
-  title: string;
-  url: string;
 };

@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Education from "./components/Education";
 import WorkExperiences from "./components/WorkExperiences";
+import TechnicalOutputs from "./components/TechnicalOutputs";
 
 export default function Page() {
   return (
@@ -20,6 +21,9 @@ export default function Page() {
           </div>
           <div className="mb-16">
             <Education />
+          </div>
+          <div className="mb-16">
+            <TechnicalOutputs />
           </div>
           <div className="mb-16">
             <WorkExperiences />
