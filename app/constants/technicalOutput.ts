@@ -2,13 +2,17 @@ import { TechnicalOutputType } from "../type/technicalOutput";
 
 export const technicalOutputs: TechnicalOutputType[] = [
   {
+    title: "【DroidKaigi.collect { #10@Nagoya }】【詳解】 Strong Skipping Mode",
+    url: "https://speakerdeck.com/yusukesuzuki1213/xiang-jie-compose-strong-skipping-mode",
+  },
+  {
     title:
       "【DroidKaigi 2022】Android Vitalsのデータを自動監視してビジネス指標を向上させよう",
     url: "https://droidkaigi.jp/2022/timetable/364446",
   },
   {
     title: "【ZOZO Tech Talk #1】Android Lintでコードの宣言順をチェックする",
-    url: "https://zozotech-inc.connpass.com/event/230668/",
+    url: "https://speakerdeck.com/yusukesuzuki1213/check-declaration-order-with-android-custom-lint",
   },
   {
     title:
