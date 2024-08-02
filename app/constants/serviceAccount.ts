@@ -13,14 +13,14 @@ export const serviceAccounts: ServiceAccountType[] = [
     url: "https://github.com/YusukeSuzuki1213",
     icon: "github",
   },
-  {
+  /* {
     url: "https://qiita.com/YusukeSuzuki1213",
     icon: "qiita",
   },
   {
     url: "https://zenn.dev/yusuke_zukki?tab=scraps",
     icon: "zenn",
-  },
+  }, */
 ];
 
 export const toAwesomeIcon = (icon: IconType) => {
