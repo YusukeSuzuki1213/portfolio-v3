@@ -3,7 +3,7 @@ import { WorkExperienceType } from "../type/workExperience";
 export const workExperiences: WorkExperienceType[] = [
   {
     name: "TechTrain(エンジニア向け教育サービス)のメンター業務",
-    period: "2024/05〜",
+    period: "2024/05〜現在",
     employmentType: "業務委託",
     teamSize: "-",
     task: "実装相談 / キャリア相談 / 面接対策 / など",
@@ -13,7 +13,7 @@ export const workExperiences: WorkExperienceType[] = [
   },
   {
     name: "コスメ・美容系サービスのAndroidアプリ開発",
-    period: "2023/09〜",
+    period: "2023/09〜現在",
     employmentType: "業務委託",
     teamSize: "2〜5人",
     task: "設計 / 実装 / テスト / レビュー",
@@ -30,6 +30,7 @@ export const workExperiences: WorkExperienceType[] = [
     comment:
       "新機能の開発,リファクタリング,バグ修正などAndroidアプリ開発を一通り担当しました。DroidKaigiの登壇やテックブログの執筆など技術的なアウトプットも積極的に行いました。また新卒エンジニアの採用にも参加し面接官なども担当しました。",
   },
+  /**
   {
     name: "プレゼンサービスのAndroidアプリ開発",
     period: "2019/02〜2019/09",
@@ -58,4 +59,5 @@ export const workExperiences: WorkExperienceType[] = [
     technology: "Docker / Kubernetes",
     comment: "楽天市場のバックエンドに関わる実装を担当しました。",
   },
+   */
 ];
