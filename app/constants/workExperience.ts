@@ -2,6 +2,24 @@ import { WorkExperienceType } from "../type/workExperience";
 
 export const workExperiences: WorkExperienceType[] = [
   {
+    name: "グルメ系サービスのAndroidアプリ開発",
+    period: "2024/09〜現在",
+    employmentType: "業務委託",
+    teamSize: "3人",
+    task: "要件整理 / 設計 / 実装 / テスト",
+    technology: "Android / Kotlin / Firebase",
+    comment: "リリースに向けてAndroidアプリを開発中です。",
+  },
+  {
+    name: "HackBar(エンジニアが集まるバー)のスタッフ",
+    period: "2024/09〜現在",
+    employmentType: "-",
+    teamSize: "-",
+    task: "カクテル作成 / エンジニアの接客",
+    technology: "-",
+    comment: "バーテンダーとしてカクテル作成やエンジニアの接客をしています。",
+  },
+  {
     name: "TechTrain(エンジニア向け教育サービス)のメンター業務",
     period: "2024/05〜現在",
     employmentType: "業務委託",
@@ -12,13 +30,14 @@ export const workExperiences: WorkExperienceType[] = [
       "ユーザからのキャリア相談や実装相談などのメンター業務を担当しています。面談のご予約は<a class='underline text-green-500' href = 'https://techtrain.dev/mentors/265'>こちら</a>から。",
   },
   {
-    name: "コスメ・美容系サービスのAndroidアプリ開発",
+    name: "LIPSのAndroidアプリ開発",
     period: "2023/09〜現在",
     employmentType: "業務委託",
     teamSize: "2〜5人",
-    task: "設計 / 実装 / テスト / レビュー",
+    task: "設計 / 実装 / テスト / レビュー/ 運用保守",
     technology: "Android / Kotlin / Firebase",
-    comment: "新機能の開発を中心に業務をしています。",
+    comment:
+      "ブックマークフォルダのリデザインを中心に新機能の開発やバグ修正を担当しました。",
   },
   {
     name: "ZOZOTOWNのAndroidアプリ開発",

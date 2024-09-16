@@ -20,13 +20,13 @@ export default function Page() {
             <About />
           </div>
           <div className="mb-16">
-            <Education />
-          </div>
-          <div className="mb-16">
             <TechnicalOutputs />
           </div>
           <div className="mb-16">
             <WorkExperiences />
+          </div>
+          <div className="mb-16">
+            <Education />
           </div>
           <div className="mb-16">
             <Skills />
