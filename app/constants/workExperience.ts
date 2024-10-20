@@ -10,7 +10,7 @@ export const workExperiences: WorkExperienceType[] = [
     technology: "Android / Kotlin / Firebase",
     comment: "リリースに向けてAndroidアプリを開発中です。",
   },
-  {
+  /* {
     name: "HackBar(エンジニアが集まるバー)のスタッフ",
     period: "2024/09〜現在",
     employmentType: "-",
@@ -18,7 +18,7 @@ export const workExperiences: WorkExperienceType[] = [
     task: "カクテル作成 / エンジニアの接客",
     technology: "-",
     comment: "バーテンダーとしてカクテル作成やエンジニアの接客をしています。",
-  },
+  }, */
   {
     name: "TechTrain(エンジニア向け教育サービス)のメンター業務",
     period: "2024/05〜現在",
