@@ -8,7 +8,8 @@ export const workExperiences: WorkExperienceType[] = [
     teamSize: "3人",
     task: "要件整理 / 設計 / 実装 / テスト",
     technology: "Android / Kotlin / Firebase",
-    comment: "リリースに向けてAndroidアプリを開発中です。",
+    comment:
+      "リリースに向けて要件・仕様整理からAndroidアプリを開発しています。",
   },
   /* {
     name: "HackBar(エンジニアが集まるバー)のスタッフ",
@@ -37,7 +38,7 @@ export const workExperiences: WorkExperienceType[] = [
     task: "設計 / 実装 / テスト / レビュー/ 運用保守",
     technology: "Android / Kotlin / Firebase",
     comment:
-      "ブックマークフォルダのリデザインを中心に新機能の開発やバグ修正を担当しました。",
+      "【担当業務】<br>・ベストコスメ対応<br>・保存フォルダのリニューアル<br>など",
   },
   {
     name: "ZOZOTOWNのAndroidアプリ開発",
@@ -47,7 +48,7 @@ export const workExperiences: WorkExperienceType[] = [
     task: "設計 / 実装 / テスト / レビュー / 運用保守",
     technology: "Android / Kotlin / Java / Firebase",
     comment:
-      "新機能の開発,リファクタリング,バグ修正などAndroidアプリ開発を一通り担当しました。DroidKaigiの登壇やテックブログの執筆など技術的なアウトプットも積極的に行いました。また新卒エンジニアの採用にも参加し面接官なども担当しました。",
+      "【担当業務】<br>・ZOZOTOWNのAndroidアプリ開発<br>・エンジニアの面接官<br>・逆求人イベント面接官<br>・勉強会の運営<br>・登壇/技術記事の執筆<br>など",
   },
   /**
   {
