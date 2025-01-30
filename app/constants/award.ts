@@ -10,13 +10,13 @@ export const awards: AwardType[] = [
   },
   {
     title: "みんなのラズパイコンテスト2017 ラズベリーパイ財団賞",
-    url: "https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154127",
+    url: "https://web.archive.org/web/20200810161857/https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154127",
   },
   {
     title: "TRUNK HACKATHON in OSAKA 第三位, 株式会社千賞",
   },
   {
     title: "静岡大学 学長表彰",
-    url: "https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154175",
+    url: "https://web.archive.org/web/20240418070745/https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154175",
   },
 ];
