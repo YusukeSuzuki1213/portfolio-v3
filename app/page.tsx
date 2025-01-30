@@ -28,9 +28,9 @@ export default function Page() {
           <div className="mb-16">
             <Education />
           </div>
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <Skills />
-          </div>
+          </div> */}
           <div className="mb-16">
             <Awards />
           </div>

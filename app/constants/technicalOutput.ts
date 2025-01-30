@@ -2,6 +2,11 @@ import { TechnicalOutputType } from "../type/technicalOutput";
 
 export const technicalOutputs: TechnicalOutputType[] = [
   {
+    title:
+      "正社員→フリーランス→2度目の正社員。両方を経験したYusukeさんのキャリア選択のリアル",
+    url: "https://techtrain.dev/media/articles/nj3f7bzinr9x",
+  },
+  {
     title: "【DroidKaigi.collect { #10@Nagoya }】【詳解】 Strong Skipping Mode",
     url: "https://speakerdeck.com/yusukesuzuki1213/xiang-jie-compose-strong-skipping-mode",
   },
