@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <Heading text="About" />
       <p className="mt-4 leading-relaxed tracking-wide">
-        京都在住のソフトウェアエンジニア。現在はフリーランスのエンジニアとしてAndroidアプリの開発を行っています。
+        東京在住のソフトウェアエンジニア。Androidアプリの開発をメインにしています。
       </p>
       <p className="mt-4 leading-relaxed tracking-wide">
         【趣味】✈️旅行｜🥊格闘技｜🧖サウナ｜🏂スノボ｜💪筋トレ | 📝
