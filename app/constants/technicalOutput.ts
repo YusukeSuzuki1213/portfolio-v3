@@ -3,6 +3,11 @@ import { TechnicalOutputType } from "../type/technicalOutput";
 export const technicalOutputs: TechnicalOutputType[] = [
   {
     title:
+      "エンジニアとして知っておきたい「Android XR入門」: XRアプリの作成までわかりやすく解説します！(基礎知識編)",
+    url: "https://techtrain.dev/media/articles/pe4psfx2ob",
+  },
+  {
+    title:
       "正社員→フリーランス→2度目の正社員。両方を経験したYusukeさんのキャリア選択のリアル",
     url: "https://techtrain.dev/media/articles/nj3f7bzinr9x",
   },
