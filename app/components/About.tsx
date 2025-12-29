@@ -8,14 +8,7 @@ export default function About() {
         東京在住のソフトウェアエンジニア。Androidアプリの開発をメインにしています。
       </p>
       <p className="mt-4 leading-relaxed tracking-wide">
-        【趣味】✈️旅行｜🥊格闘技｜🧖サウナ｜🏂スノボ｜💪筋トレ | 📝
-        <a
-          className="text-green-500 underline"
-          href="https://www.instagram.com/single.line.diary"
-          target="_blank"
-        >
-          英語日記
-        </a>
+        【趣味】✈️旅行｜🥊格闘技｜🧖サウナ｜🏂スノボ｜💪筋トレ｜⛳️🔰ゴルフ
       </p>
     </div>
   );

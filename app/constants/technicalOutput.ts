@@ -2,6 +2,10 @@ import { TechnicalOutputType } from "../type/technicalOutput";
 
 export const technicalOutputs: TechnicalOutputType[] = [
   {
+    title: "ソフトメーターを考える｜newmo Advent Calendar 2025",
+    url: "https://tech.newmo.me/entry/2025/12/16/160000",
+  },
+  {
     title:
       "エンジニアとして知っておきたい「Android XR入門」: XRアプリの作成までわかりやすく解説します！(基礎知識編)",
     url: "https://techtrain.dev/media/articles/pe4psfx2ob",

@@ -2,6 +2,15 @@ import { ExternalPostType } from "../type/post";
 
 export const posts: ExternalPostType[] = [
   {
+    title: "ソフトメーターを考える｜newmo Advent Calendar 2025",
+    description: "",
+    publishDate: "2025/12/16",
+    url: "https://tech.newmo.me/entry/2025/12/16/160000",
+    imageUrl:
+      "https://cdn.image.st-hatena.com/image/scale/61db2b68c0e923bd8cda3eded0a8924c35156c3d/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fn%2Fnewmo%2F20251216%2F20251216121148.png",
+    titleIconUrl: "/logo/taxi.png",
+  },
+  {
     title:
       "AndroidアプリをMaterial Designのガイドラインに準拠させるための取り組み",
     description:

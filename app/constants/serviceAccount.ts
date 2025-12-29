@@ -3,6 +3,7 @@ import { faQ, faZ } from "@fortawesome/free-solid-svg-icons";
 import { IconType, ServiceAccountType } from "../type/ServiceAccount";
 
 export const MY_TWITTER_URL = "https://twitter.com/s1u2z1u3ki";
+export const MY_YOUTRUST_URL = "https://youtrust.jp/users/yusuke-suzuki";
 
 export const serviceAccounts: ServiceAccountType[] = [
   {

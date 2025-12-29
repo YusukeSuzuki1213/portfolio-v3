@@ -1,5 +1,8 @@
 import Heading from "@/app/components/Heading";
-import { MY_TWITTER_URL } from "@/app/constants/serviceAccount";
+import {
+  MY_TWITTER_URL,
+  MY_YOUTRUST_URL,
+} from "@/app/constants/serviceAccount";
 
 export default function Contact() {
   return (
@@ -8,10 +11,14 @@ export default function Contact() {
       <div className="ml-4 mt-4">
         <ul className="max-w-md space-y-1 list-disc text-gray-300 list-outside">
           <li>
-            Email: &nbsp;
-            <span className="italic text-green-500">
-              yusuke.suzuki.2024@gmail.com
-            </span>
+            YOUTRUST: &nbsp;
+            <a
+              href={MY_YOUTRUST_URL}
+              target="_blank"
+              className="text-green-500 underline"
+            >
+              Yusuke Suzuki
+            </a>
           </li>
           <li>
             DM: &nbsp;
