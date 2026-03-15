@@ -18,6 +18,8 @@ export default function Gallery(props: Props) {
       : `${baseStyle} text-white`;
   };
 
+  const currentGallery = props.galleries.find((g) => g.category === category);
+
   return (
     <>
       <div className="flex flex-wrap justify-items-start mb-2 md:mb-4 gap-2">
@@ -34,22 +36,17 @@ export default function Gallery(props: Props) {
           );
         })}
       </div>
-      <div className="columns-1 sm:columns-2 md:columns-3">
-        {props.galleries.map((gallery) => {
-          return gallery.photos.map((photo) => {
-            return (
-              <Image
-                hidden={gallery.category != category}
-                key={photo.path}
-                className="h-auto max-w-full mb-4 rounded-md fadeIn"
-                width={512}
-                height={0}
-                src={photo.path}
-                alt=""
-              />
-            );
-          });
-        })}
+      <div key={category} className="columns-1 sm:columns-2 md:columns-3">
+        {currentGallery?.photos.map((photo) => (
+          <Image
+            key={photo.path}
+            className="h-auto max-w-full mb-4 rounded-md fadeIn"
+            width={512}
+            height={0}
+            src={photo.path}
+            alt=""
+          />
+        ))}
       </div>
     </>
   );
